@@ -23,11 +23,17 @@ jobs:
       
       - name: Download IP2ASN IPv4 data
         run: |
-          curl -L -o data/ip2asn/ip2asn-v4.tsv.gz https://iptoasn.com/data/ip2asn-v4.tsv.gz
+          set -e
+          curl -fL -o data/ip2asn/ip2asn-v4.tsv.gz https://iptoasn.com/data/ip2asn-v4.tsv.gz
+          # Verify the file was downloaded and is not empty
+          test -s data/ip2asn/ip2asn-v4.tsv.gz
       
       - name: Download IP2ASN IPv6 data
         run: |
-          curl -L -o data/ip2asn/ip2asn-v6.tsv.gz https://iptoasn.com/data/ip2asn-v6.tsv.gz
+          set -e
+          curl -fL -o data/ip2asn/ip2asn-v6.tsv.gz https://iptoasn.com/data/ip2asn-v6.tsv.gz
+          # Verify the file was downloaded and is not empty
+          test -s data/ip2asn/ip2asn-v6.tsv.gz
       
       - name: Commit and push changes
         run: |
