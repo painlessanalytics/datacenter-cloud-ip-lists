@@ -1,0 +1,42 @@
+name: Update IP2ASN Data
+
+on:
+  schedule:
+    # Run at 4:23 AM UTC every Sunday (last day of the week)
+    - cron: '23 4 * * 0'
+  workflow_dispatch: # Allow manual triggering for testing
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      
+      - name: Create data directory
+        run: mkdir -p data/ip2asn
+      
+      - name: Download IP2ASN IPv4 data
+        run: |
+          curl -L -o data/ip2asn/ip2asn-v4.tsv.gz https://iptoasn.com/data/ip2asn-v4.tsv.gz
+      
+      - name: Download IP2ASN IPv6 data
+        run: |
+          curl -L -o data/ip2asn/ip2asn-v6.tsv.gz https://iptoasn.com/data/ip2asn-v6.tsv.gz
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ip2asn/*.tsv.gz
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update IP2ASN data files"
+            git push
+          fi
