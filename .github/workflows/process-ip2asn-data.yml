@@ -21,11 +21,11 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
-          extensions: mbstring
+          extensions: mbstring, zlib, gmp
           tools: composer
       
       - name: Composer Install
         run: composer install --working-dir=bin/
 
       - name: Process ip2ASN data
-        run: php bin/process_ip2asn.php
+        run: php -d memory_limit=512M bin/process_ip2asn.php

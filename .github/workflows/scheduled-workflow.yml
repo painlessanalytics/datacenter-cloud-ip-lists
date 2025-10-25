@@ -1,0 +1,17 @@
+name: Scheduled Weekly Workflow
+
+on:
+  schedule:
+    # Run at 4:23 AM UTC every Sunday
+    - cron: '23 4 * * 0'
+  workflow_dispatch: # Allow manual triggering for testing
+
+jobs:
+  update-asn-data:
+    name: Update ASN Data
+    uses: ./.github/workflows/update-ip2asn-data.yml
+
+  process-asn-data:
+    name: Process ASN Data
+    needs: update-asn-data
+    uses: ./.github/workflows/process-ip2asn-data.yml

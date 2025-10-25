@@ -8,6 +8,7 @@ Special thanks to the following projects and contributors and their maintainers 
 - [X4BNet/lists_vpn](https://github.com/X4BNet/lists_vpn) - For providing a comprehensive list of ASNs associated with datacenter and cloud service providers.
 - [ipverse/asn-info](https://github.com/ipverse/asn-info) - For providing detailed ASN information used in this project.
 - [iptoasn.com](https://iptoasn.com/) - For providing IP to ASN mapping data.
+- [shivammathur/setup-php](https://github.com/shivammathur/setup-php) - For providing PHP setup actions for GitHub workflows.
 - Deep in the weeds:
 -- [mlocati/ip-lib](https://github.com/mlocati/ip-lib) - A PHP library for IP address manipulation and validation.
 -- [composer/composer](https://github.com/composer/composer) - Dependency Manager for PHP.

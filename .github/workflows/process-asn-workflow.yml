@@ -1,4 +1,4 @@
-name: Update ASN Data
+name: Process ASN
 
 on:
   workflow_dispatch: # Allow manual triggering for testing
@@ -7,4 +7,4 @@ jobs:
   process-ip2asn-data:
     name: Process ip2asn Data
     needs: update-ip2asn-data
-    uses: ./.github/workflows/update-ip2asn-data.yml
+    uses: ./.github/workflows/process-ip2asn-data.yml
