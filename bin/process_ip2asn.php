@@ -13,7 +13,7 @@ $startTime = microtime(true);
 /*
  * Preload our data variable files
  */
-$allDatacenterASNs = file('../data/asn/ASN.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$allDatacenterASNs = file(dirname(dirname(__FILE__)).'/data/asn/ASN.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 $asnMap = array_flip($allDatacenterASNs);
 $asnMap = array_fill_keys($allDatacenterASNs, 'other'); // Initially map them all to the 'other' provider
 
@@ -25,7 +25,7 @@ $results['other']['ipv4'] = [];
 $results['other']['ipv6'] = [];
 
 // As we load more specific ASNs for known providers, we can overwrite the asn mapping
-$specificProviders = glob('../data/asn/specific/*.txt');
+$specificProviders = glob(dirname(dirname(__FILE__)).'/data/asn/specific/*.txt');
 foreach ($specificProviders as $providerFile) {
   $providerName = pathinfo($providerFile, PATHINFO_FILENAME);
   $providerASNs = file($providerFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
