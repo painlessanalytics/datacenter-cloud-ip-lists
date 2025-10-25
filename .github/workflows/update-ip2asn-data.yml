@@ -60,6 +60,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ip2asn/*.tsv.gz
           git add data/asn/ASN.txt
+          git add data/asn/as.csv
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
