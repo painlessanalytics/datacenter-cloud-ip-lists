@@ -29,3 +29,16 @@ jobs:
 
       - name: Process ip2ASN data
         run: php -d memory_limit=512M bin/process_ip2asn.php
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add lists/asn/*.txt
+          git add lists/asn/aggregated/*.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update ASN lists from ip2asn data"
+            git push
+          fi
