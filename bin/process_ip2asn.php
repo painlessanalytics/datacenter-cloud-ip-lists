@@ -1,6 +1,7 @@
 <?php
 // process_ip2asn.php
 
+// Composer autoload
 require 'vendor/autoload.php';
 
 

@@ -1,6 +1,6 @@
 # update-ip2asn-data.yml
-name: Update IP2ASN Data
-run-name: Update Data
+name: Process IP2ASN Data
+run-name: Process Data
 
 on:
   workflow_call:
