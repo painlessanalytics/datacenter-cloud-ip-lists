@@ -1,4 +1,4 @@
-name: Scheduled Weekly Workflow
+name: Scheduled Workflow
 
 on:
   schedule:

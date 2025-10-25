@@ -1,4 +1,4 @@
-name: Update ASN Data
+name: Update ASN Workflow
 
 on:
   workflow_dispatch: # Allow manual triggering for testing

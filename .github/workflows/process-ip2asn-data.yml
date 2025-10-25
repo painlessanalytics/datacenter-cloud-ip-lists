@@ -1,5 +1,5 @@
-# update-ip2asn-data.yml
-name: Process IP2ASN Data
+# process-ip2asn-data.yml
+name: Process ASN Template
 run-name: Process Data
 
 on:

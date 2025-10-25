@@ -1,5 +1,5 @@
 # update-ip2asn-data.yml
-name: Update IP2ASN Data
+name: Update ASN Template
 run-name: Update Data
 
 on:
