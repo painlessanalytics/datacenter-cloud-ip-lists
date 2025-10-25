@@ -1,0 +1,31 @@
+# update-ip2asn-data.yml
+name: Update IP2ASN Data
+run-name: Update Data
+
+on:
+  workflow_call:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      
+      - name: Setup PHP with PECL extension
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring
+          tools: composer
+      
+      - name: Composer Install
+        run: composer install --working-dir=bin/
+
+      - name: Process ip2ASN data
+        run: php bin/process_ip2asn.php
