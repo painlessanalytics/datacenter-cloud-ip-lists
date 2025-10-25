@@ -19,8 +19,10 @@ jobs:
           ref: main
       
       - name: Create data directory
-        run: mkdir -p data/ip2asn
-      
+        run: |
+          mkdir -p data/ip2asn
+          mkdir -p data/asn
+
       - name: Download IP2ASN IPv4 data
         run: |
           set -e
@@ -34,12 +36,30 @@ jobs:
           curl -fL -o data/ip2asn/ip2asn-v6.tsv.gz https://iptoasn.com/data/ip2asn-v6.tsv.gz
           # Verify the file was downloaded and is not empty
           test -s data/ip2asn/ip2asn-v6.tsv.gz
-      
+
+      - name: Download ASN list of datacenters from X4BNet/lists_vpn
+        run: |
+          set -e
+          curl -fL -o data/asn/ASN.txt https://raw.githubusercontent.com/X4BNet/lists_vpn/refs/heads/main/input/datacenter/ASN.txt
+          # Verify the file was downloaded and is not empty
+          test -s data/asn/ASN.txt
+
+      - name: Download the full list of autonomous systems ASN info from ipverse/asn-info
+        run: |
+          set -e
+          curl -fL -o data/asn/as.csv https://raw.githubusercontent.com/ipverse/asn-info/refs/heads/master/as.csv
+          # Verify the file was downloaded and is not empty
+          test -s data/asn/as.csv
+
+          echo "Downloaded files and their sizes:"
+          ls -lh data/ip2asn/ip2asn-v4.tsv.gz data/ip2asn/ip2asn-v6.tsv.gz data/asn/ASN.txt data/asn/as.csv
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ip2asn/*.tsv.gz
+          git add data/asn/ASN.txt
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
