@@ -1,0 +1,12 @@
+name: Update Workflow for Datacenter and Cloud IP Lists
+
+on:
+  schedule:
+    # Run at 4:23 AM UTC every Sunday
+    - cron: '23 4 * * 0'
+  workflow_dispatch: # Allow manual triggering for testing
+
+jobs:
+  update-ip2asn-data:
+    name: Update ip2asn Data
+    uses: ./.github/workflows/update-ip2asn-data.yml
