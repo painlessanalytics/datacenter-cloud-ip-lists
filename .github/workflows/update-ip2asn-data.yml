@@ -18,6 +18,11 @@ jobs:
         with:
           ref: main
       
+      - name: Setup PHP with PECL extension
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring
       - name: Create data directory
         run: |
           mkdir -p data/ip2asn
@@ -47,10 +52,14 @@ jobs:
       - name: Download the full list of autonomous systems ASN info from ipverse/asn-info
         run: |
           set -e
-          curl -fL -o data/asn/as.csv https://raw.githubusercontent.com/ipverse/asn-info/refs/heads/master/as.csv
+          curl -fL -o /tmp/as.csv https://raw.githubusercontent.com/ipverse/asn-info/refs/heads/master/as.csv
           # Verify the file was downloaded and is not empty
+          test -s /tmp/as.csv
+          php bin/fix_ipverse_csv.php
           test -s data/asn/as.csv
 
+      - name: List downloaded files
+        run: |
           echo "Downloaded files and their sizes:"
           ls -lh data/ip2asn/ip2asn-v4.tsv.gz data/ip2asn/ip2asn-v6.tsv.gz data/asn/ASN.txt data/asn/as.csv
 
