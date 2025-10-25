@@ -6,7 +6,7 @@ Some of the files in this directory are sourced from external repositories, othe
 ## ASN.txt
 The `ASN.txt` file is a plain text file that lists the ASNs associated with various datacenter and cloud service providers. Each line in the file represents a single ASN.
 
-The ASN.txt file is sourced from the [X4BNet/lists_vpn](https://github.com/X4BNet/lists_vpn) repository.
+The ASN.txt file is sourced from the [X4BNet/lists_vpn](https://github.com/X4BNet/lists_vpn) repository. In this version, each leading 'AS' prefix has been removed as well as the comment following the number to ensure compatibility with systems that expect numeric ASN values.
 
 ## as.csv
 The `as.csv` file is a CSV (Comma-Separated Values) file that contains detailed information about autonomous systems. This file includes columns such as ASN, organization handle, and organization name.

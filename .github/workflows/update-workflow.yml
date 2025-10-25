@@ -1,4 +1,4 @@
-name: Update Workflow for Datacenter and Cloud IP Lists
+name: Update Workflow
 
 on:
   schedule:

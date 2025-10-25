@@ -41,11 +41,14 @@ jobs:
           # Verify the file was downloaded and is not empty
           test -s data/ip2asn/ip2asn-v6.tsv.gz
 
-      - name: Download ASN list of datacenters from X4BNet/lists_vpn
+      - name: Download ASN list of datacenters from X4BNet/lists_vpn, remove first two characters 'an' 
         run: |
           set -e
-          curl -fL -o data/asn/ASN.txt https://raw.githubusercontent.com/X4BNet/lists_vpn/refs/heads/main/input/datacenter/ASN.txt
+          curl -fL -o /tmp/ASN.txt https://raw.githubusercontent.com/X4BNet/lists_vpn/refs/heads/main/input/datacenter/ASN.txt
           # Verify the file was downloaded and is not empty
+          test -s /tmp/ASN.txt
+          sed 's/^AS//' /tmp/ASN.txt > /tmp/ASN.txt.fix1
+          sed 's/ \#.*//' /tmp/ASN.txt.fix1 > data/asn/ASN.txt
           test -s data/asn/ASN.txt
 
       - name: Download the full list of autonomous systems ASN info from ipverse/asn-info
