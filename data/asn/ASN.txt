@@ -1,905 +1,905 @@
-AS45090 # Tencent cloud computing, they dont really monitor their network
-AS3223 # VOXILITY, RO
-AS3561 # CENTURYLINK-LEGACY-SAVVIS - Savvis, US
-AS3842 # RAMNODE - RamNode LLC, US
-AS4250 # ALENT-ASN-1 - Alentus Corporation, US
-AS4323 # TWTC - tw telecom holdings, inc., US
-AS4694 # IDC Yahoo Japan Corporation, JP
-AS5577 # ROOT, LU
-AS6724 # STRATO STRATO AG, DE
-AS6870 # H1ASN, RU
-AS6939 # HURRICANE - Hurricane Electric, Inc., US
-AS7203 # LEASEWEB-USA-SFO-12 - Leaseweb USA, Inc., US
-AS7489 # HOSTUS-GLOBAL-AS HostUS, HK
-AS7506 # INTERQ GMO Internet,Inc, JP
-AS7850 # CITYLINKFIBER - iHighway.net, Inc., US
-AS7979 # SERVERS - Servers.com, Inc., US
-AS8075 # MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US
-AS8100 # ASN-QUADRANET-GLOBAL - QuadraNet, Inc, US
-AS8455 # ATOM86-AS ATOM86, NL
-AS8560 # ONEANDONE-AS / IONOS, DE
-AS8849 # MELBIKOMAS UAB, LT
-AS8972 # PLUSSERVER-AS, DE
-AS9370 # SAKURA-B SAKURA Internet Inc., JP
-AS10297 # ENET-2 - eNET Inc., US
-AS10439 # CARINET - CariNet, Inc., US
-AS10929 # NETELLIGENT - Netelligent Hosting Services Inc., CA
-AS11588 # HIGHWINDS - Highwinds Network Group, Inc., US
-AS11831 # ESECUREDATA - eSecureData, CA
-AS11878 # TZULO - tzulo, inc., US
-AS12586 # ASGHOSTNET, DE
-AS12876 # AS12876, FR
-AS12989 # HWNG, NL
-AS13213 # UK2NET-AS, GB
-AS13739 # DATACENTER-IP - Datacenter IP, LLC, US
-AS13926 # RBLHST-NY - Strong Technology, LLC., US
-AS14061 # DIGITALOCEAN-ASN - Digital Ocean, Inc., US
-AS14127 # ILAND - Iland Internet Solutions Corporation, US
-AS14618 # AMAZON-AES - Amazon.com, Inc., US
-AS15003 # NOBIS-TECH - Nobis Technology Group, LLC, US
-AS15083 # INFOLINK-MIA-US - Infolink Global Corporation, US
-AS15169 # GOOGLE - Google Inc., US
-AS15395 # RACKSPACE-LON, GB
-AS15497 # COLOCALL Internet Data Center "ColoCALL", UA
-AS15510 # CWCS-PS, GB
-AS15626 # ITLAS, UA
-AS15734 # IDH, ES
-AS16125 # CHERRYSERVERS1-AS, LT
-AS16262 # DELTA-LTD-AS, RU
-AS16276 # OVH, FR
-AS16284 # UNSPECIFIED, NG
-AS16397 # EQUINIX BRASIL SP, BR
-AS16509 # AMAZON-02 - Amazon.com, Inc., US
-AS16628 # DEDICATED-FIBER-COMMUNICATIONS - DedFiberCo, US
-AS17216 # DC74-AS - DC74 LLC, US
-AS18450 # WEBNX - WebNX, Inc., US
-AS18779 # EGIHOSTING - EGIHosting, US
-AS18978 # ENZUINC-US - Enzu Inc, US
-AS19084 # COLOUP - ColoUp, US
-AS19318 # NJIIX-AS-1 - NEW JERSEY INTERNATIONAL INTERNET EXCHANGE LLC,
-AS19437 # SS-ASH - SECURED SERVERS LLC, US
-AS19531 # NODESDIRECT - Nodes Direct, US
-AS19624 # SERVERROOM - Data Room, Inc, US
-AS19844 # GORACK - GoRack LLC, US
-AS19871 # NETWORK-SOLUTIONS-HOSTING - Network Solutions, LLC, US
-AS19969 # JOESDATACENTER - Joe's Datacenter, LLC, US
-AS20021 # LNH-INC - HostMySite, US
-AS20264 # WEBAIR-INTERNET-2 - Webair Internet Development Company Inc.
-AS20454 # SSASN2 - SECURED SERVERS LLC, US
-AS20473 # AS-CHOOPA - Choopa, LLC, US
-AS20598 # CYBERSPACE-AS Autonomous System number for Cyber Space, IL
-AS20738 # AS20738, GB
-AS20773 # HOSTEUROPE-AS, DE
-AS20836 # CDLAN-AS Milano, IT
-AS20860 # IOMART-AS, GB
-AS21100 # ITLDC-NL, UA
-AS21159 # NOVOSERVE-GMBH-AS Frankfurt, Germany, NL
-AS21321 # ARETI-AS, GB
-AS21859 # ZNET - Zenlayer Inc, US
-AS22363 # PHMGMT-AS1 - Powerhouse Management, Inc., US
-AS22552 # ESITED - eSited Solutions, US
-AS22781 # RBLHST - Strong Technology, LLC., US
-AS23033 # WOW - Wowrack.com, US
-AS23342 # UNITEDLAYER - Unitedlayer, Inc., US
-AS23352 # SERVERCENTRAL - Server Central Network, US
-AS24482 # SGGS-AS-AP SG.GS, SG
-AS24768 # ALMOUROLTEC, PT
-AS24875 # NOVOSERVE-AS, NL
-AS24940 # HETZNER-AS, DE
-AS24961 # MYLOC-AS, DE
-AS24971 # MASTER-AS Czech Republic / www.master.cz, CZ
-AS25163 # NG-NIGERIA-AS, NG
-AS25369 # BANDWIDTH-AS, GB
-AS25379 # PEKITEL-AS, RU
-AS25780 # HUGESERVER-NETWORKS - HugeServer Networks, LLC, US
-AS25820 # IT7NET - IT7 Networks Inc, CA
-AS27257 # WEBAIR-INTERNET - Webair Internet Development Company Inc.,
-AS28753 # LEASEWEB-, DE
-AS29066 # VELIANET-AS velia.net Internetdienste GmbH, DE
-AS29073 # QUASINETWORKS, NL
-AS29182 # ISPSYSTEM-AS, LU
-AS29302 # HSI-EUROPE, GB
-AS29354 # PCE-DE-DUS - PCE-NET GmbH, DE
-AS29550 # SIMPLYTRANSIT, GB
-AS29691 # NINE, CH
-AS29802 # HVC-AS - HIVELOCITY VENTURES CORP, US
-AS29838 # AMC - Atlantic Metro Communications, US
-AS29854 # WESTHOST - WestHost, Inc., US
-AS30083 # SERVER4YOU - server4you Inc., US
-AS30176 # AS-PRIORITYCOLO - Priority Colo Inc, CA
-AS30475 # WEHOSTWEBSITES-COM - Handy Networks, LLC, US
-AS30633 # LEASEWEB-USA-WDC-01 - Leaseweb USA, Inc., US
-AS30693 # SERVERHUB-PHOENIX - Eonix Corporation, US
-AS30900 # WEBWORLD-AS t/a Web World Ireland, IE
-AS30998 # NAL-AS, NG
-AS31034 # ARUBA-ASN, IT
-AS31103 # KEYWEB-AS, DE
-AS32097 # WII-KC - WholeSale Internet, Inc., US
-AS32181 # ASN-GIGENET - GigeNET, US
-AS32244 # LIQUID-WEB-INC - Liquid Web, L.L.C, US
-AS32475 # SINGLEHOP-LLC - SingleHop, Inc., US
-AS32489 # AMANAHA-NEW - Amanah Tech Inc., CA
-AS32613 # IWEB-AS - iWeb Technologies Inc., CA
-AS32780 # HOSTINGSERVICES-INC - Hosting Services, Inc., US
-AS33070 # Rackspace
-AS33083 # AXCELX-NET - AxcelX Technologies LLC, US
-AS33182 # DIMENOC - HostDime.com, Inc., US
-AS33302 # ONS-COS - Data 102, LLC, US
-AS33330 # CLOUDRADIUM-ASN - CloudRadium L.L.C, US
-AS33387 # DATASHACK - DataShack, LC, US
-AS33438 # HIGHWINDS2 - Highwinds Network Group, Inc., US
-AS33480 # WEBWERKSAS1 - Web Werks, US
-AS33724 # BIZNESSHOSTING - VOLICO, US
-AS33785 # CITYNET, EG
-AS33891 # CORE-BACKBONE, DE
-AS34305 # BASEIP, NL
-AS34971 # PDDA-AS, CZ
-AS34989 # SERVETHEWORLD-AS, NO
-AS35017 # SWIFTWAY-AS Netherlands, GB
-AS35366 # ISPPRO-AS EUserv / KOS-Online / Keepfree, DE
-AS35415 # WEBZILLA, NL
-AS35470 # XL-AS, NL
-AS35662 # REDSTATION European Network, GB
-AS35908 # VPLSNET - Krypt Technologies, US
-AS35916 # MULTA-ASN1 - MULTACOM CORPORATION, US
-AS36024 # COLO4-CO - Colo4, LLC, US
-AS36114 # VERSAWEB-ASN - Versaweb, LLC, US
-AS36290 # THECABLE-STKITTS-01 - The Cable of St. Kitts, KN
-AS36351 # SOFTLAYER - SoftLayer Technologies Inc., US
-AS36352 # AS-COLOCROSSING - ColoCrossing, US
-AS36666 # GTCOMM - GloboTech Communications, CA
-AS36887 # DOPC-AS, NG
-AS36970 # interswitch, NG
-AS37018 # GALAXYBB-AS, NG
-AS37088 # VDT-AS, NG
-AS37153 # HETZNER, ZA
-AS37170 # UNILAG, NG
-AS37209 # HYPERIA, NG
-AS37230 # SWIFTTALK, NG
-AS37248 # PHASE3TEL, NG
-AS37269 # ICSL, NG
-AS37280 # BCL, NG
-AS37308 # COOLLINK, NG
-AS37347 # NGCOM, NG
-AS37377 # Futurecom, NG
-AS37472 # NIGCOMSAT, NG
-AS37506 # Zinox, NG
-AS37521 # Internet-Solutions-, NG
-AS37540 # WINROCK-, NG
-AS37643 # Ambion-AS, NG
-AS37661 # NRaE1-AS, NG
-AS37692 # NetStack-AS, ZA
-AS37714 # BITFLUX, NG
-AS38001 # NEWMEDIAEXPRESS-AS-AP NewMedia Express Pte Ltd, SG
-AS39020 # COMVIVE-AS Madrid - Spain, ES
-AS39326 # HSO-GROUP, GB
-AS39351 # ESAB-AS, SE
-AS39392 # SUPERNETWORK-AS Bilejova 407, CZ
-AS39572 # ADVANCEDHOSTERS-AS, NL
-AS40156 # THEOPT-HOU - The Optimal Link Corporation, US
-AS40244 # TURNKEY-INTERNET - Turnkey Internet Inc., US
-AS40676 # Psychz Networks, US
-AS40824 # WZCOM-US - WZ Communications Inc., US
-AS40861 # PARAD-40-ASN - Paradise Networks LLC, US
-AS41653 # AQUARAY, FR
-AS41665 # HOSTING-AS hosting.ua, UA
-AS42160 # LCPDCO LCP AS dc oostkamp, BE
-AS42331 # FREEHOST, UA
-AS42473 # ANEXIA-AS A-9020 # Klagenfurt, AT
-AS42695 # CNHAB, SE
-AS42708 # PORTLANE www.portlane.com, SE
-AS42730 # EVANZOAS, DE
-AS42831 # UKSERVERS-AS UK Dedicated Servers, Hosting and Co-Location,
-AS43146 # Agava ltd, RU
-AS49505 # OOO Network of data-centers Selectel
-AS43289 # TRABIA trabia network, MD
-AS43317 # FISHNET-AS, RU
-AS43350 # NFORCE, NL
-AS44050 # PIN-AS, RU
-AS44066 # DE-FIRSTCOLO www.first-colo.net, DE
-AS45102 # CNNIC-ALIBABA-CN-NET-AP Alibaba (China) Technology Co., Ltd.
-AS45187 # RACKSPACE-AP Rackspace IT Hosting AS IT Hosting Provider Hon
-AS45470 # SG-8-TO-SG 8 - Infinity Pte Ltd, SG
-AS45671 # AS45671-NET-AU Wholesale Services Provider, AU
-AS45815 # HOSTCOIN-AS-IN-AP ESDS Software Solution Pvt. Ltd., IN
-AS46261 # QUICKPACKET - QuickPacket, LLC, US
-AS46430 # ASN-VICTON - VICTON, Inc., CA
-AS46475 # LIMESTONENETWORKS - Limestone Networks, Inc., US
-AS46562 # TOTAL-SERVER-SOLUTIONS - Total Server Solutions L.L.C., US
-AS46664 # VOLUMEDRIVE - VolumeDrive, US
-AS46805 # CACHED - CachedNet LLC, US
-AS46816 # DSNETWORKS-001 - DirectSpace Networks, LLC., US
-AS46844 # ST-BGP - Sharktech, US
-AS47328 # TRI-AS, ES
-AS47447 # TTM, DE
-AS47588 # TELENETRONICS-AS, RS
-AS49349 # DOTSI, PT
-AS49367 # ASSEFLOW Amsterdam Internet Exchange (AMS-IX), IT
-AS49453 # GLOBALLAYER, NL
-AS49532 # SERVERHUB-, DE
-AS49544 # I3DNET, NL
-AS49981 # WORLDSTREAM, NL
-AS50297 # INFIUM, UA
-AS50613 # THORDC-AS, IS
-AS50673 # SERVERIUS-AS, NL
-AS51159 # THINKSYSTEMSUK-ASN, GB
-AS51167 # Contabo GmbH
-AS51191 # XIRRA, DE
-AS51395 # AS-SOFTPLUS, CH
-AS51430 # ALTUSHOST-NET, NL
-AS51731 # GTT-AS, CZ
-AS51765 # ASEUHOST, FI
-AS51852 # PLI-AS, CH
-AS52048 # DATACLUB, LV
-AS52173 # MAKONIX, LV
-AS52219 # ROUTERNETWORKS, US
-AS53013 # WIX NET DO BRASIL LTDA, BR
-AS53340 # FIBERHUB - VegasNAP, LLC, US
-AS53559 # ANONYMIZER - Anonymizer Inc., US
-AS53597 # HOYOS-CONSULTING-LLC - Hoyos Consulting LLC, US
-AS53667 # PONYNET - FranTech Solutions, US
-AS53755 # IOFLOOD - Input Output Flood LLC, US
-AS53850 # GORILLASERVERS - GorillaServers, Inc., US
-AS53889 # MICFO - Micfo, LLC., US
-AS54104 # AS-NETDNA - netDNA, US
-AS54203 # RBLHST-FL - Strong Technology, LLC., US
-AS54455 # MADEIT - MadeIT inc., US
-AS54489 # CORESPACE-DAL - CoreSpace, Inc., US
-AS54500 # 18779 - EGIHosting, US
-AS54540 # INCERO - Incero LLC, US
-AS55225 # ILIKA - velia.net (USA) Inc., US
-AS55286 # SERVER-MANIA - B2 Net Solutions Inc., CA
-AS55536 # PSWITCH-HK PACSWITCH IP NETWORK, HK
-AS55933 # CLOUDIE-AS-AP Cloudie Limited, HK
-AS55967 # CNNIC-BAIDU-AP Beijing Baidu Netcom Science and Technology C
-AS56322 # SERVERASTRA-AS, HU
-AS56630 # MELBICOM-EU-AS, NL
-AS56934 # SOLOGIGABIT-AS, ES
-AS57043 # HOSTKEY-AS, NL
-AS57169 # EDIS-AS-EU, AT
-AS57230 # ARIAWEBCO-AS, GB
-AS57858 # AS57858, EE
-AS58073 # YISP-AS, NL
-AS58305 # SYN, GB
-AS59253 # LSW-SG Leaseweb Asia Pacific pte. ltd., SG
-AS59349 # GMO-Z-COM GMO-Z.COM PTE. LTD., SG
-AS59432 # GINERNET, ES
-AS59504 # CYBERTECH-AS, RU
-AS59729 # ITL-, BG
-AS59764 # ATLANTIC-NET, GB
-AS60011 # BHOST, GB
-AS60068 # CDN77, GB (Datacamp)
-AS60118 # ALISTAR-AS, RO
-AS60404 # LITESERVER, NL
-AS60485 # AS-60485, EE
-AS60505 # TELENET-SLJUDJANKA-AS, RU
-AS60558 # SECUREDSERVERS-, EU
-AS60567 # DATACLUB-, SE
-AS60781 # LEASEWEB-NL Netherlands, NL
-AS61102 # INTERHOST, IL
-AS61157 # PLUSSERVER-ASN1, DE
-AS61317 # ASDETUK host1plus.com, GB
-AS61440 # Digital Energy Technologies Chile SpA, CL
-AS62217 # VOOSERVERS, GB
-AS62240 # CLOUVIDER London, United Kingdom, GB
-AS62282 # RACKRAY UAB Rakrejus, LT
-AS62370 # SNEL, NL
-AS62471 # SWITCHDATASOLUTIONS-AS - SupremeBytes, LLC, US
-AS62540 # DRAKE-AS - Drake Holdings LLC, US
-AS62567 # DIGITALOCEAN-ASN-NY2 # - Digital Ocean, Inc., US
-AS63008 # CONTINA - Contina, US
-AS63018 # USDEDICATED - US Dedicated, US
-AS63119 # AS-63119 - netirons, US
-AS63128 # RBLHST-TOR - Strong Technology, LLC., US
-AS63199 # CDSC-AS1 - Capitalonline Data Service Co.,LTD, US
-AS63473 # HOSTHATCH-ASN - HostHatch, Inc, US
-AS63949 # LINODE-AP Linode, LLC, US
-AS64245 # AS-DIGITALFYRE - DigitalFyre Internet Solutions, LLC., US
-AS64484 # ASDMZHOST, NL
-AS132816 # SIMPLERCLOUD-AS-AP SimplerCloud Pte Ltd, SG
-AS133296 # WEBWERKS-AS-IN Web Werks India Pvt. Ltd., IN
-AS133480 # INTERGRID-AS-AP Intergrid Group Pty Ltd, AU
-AS133752 # LSW-HK Leaseweb Asia Pacific pte. ltd., HK
-AS134451 # NME-INDONESIA-AS-AP NewMedia Express Pte Ltd, ID
-AS136258 # ONEPROVIDER-AS BrainStorm Network, Inc, CA
-AS197155 # ARTNET, PL
-AS197328 # INETLTD, TR
-AS198310 # PALLADA-AS, RU
-AS198605 # AVAST Software s.r.o., CZ
-AS199653 # ARUBAFR-AS, FR
-AS199883 # ARUBACLOUDLTD-ASN, GB
-AS200019 # ASCLOUDATA, ALEXHOST, MD
-AS200039 # HYDRACOM-AS, GB
-AS201011 # NETZBETRIEB-GMBH, DE
-AS201525 # HZ-CA-AS, BG
-AS202053 # UPCLOUD, FI
-AS202836 # -Reserved AS-, ZZ
-AS203523 # VIRTONO-NETWORKS, RO
-AS203629 # TERRAHOST_AS, NO
-AS204196 # ABELOHOST, NL
-AS205053 # Asimia Damaskou, GR
-AS327705 # FUTA, NG
-AS327784 # FIDELITY-BANK, NG
-AS327813 # Web4Africa, ZA
-AS327942 # LANDMARK-UNIVERSITY, NG
-AS328035 # Zeta-Web-Nigeria-AS, NG
-AS394256 # CLOUDSINGULARITY - Tech Futures Interactive Inc., CA
-AS394330 # LTDBROADBAND - LTD Broadband LLC, US
-AS394380 # LEASEWEB-USA-DAL-10 - Leaseweb USA, Inc., US
-AS395089 # HEXTET - Hextet Systems, CA
-AS395111 # KVCNET-2009 - KVCHOSTING.COM LLC, US
-AS395978 # SANTA CLARA VALLEY WATER DISTRICT PUBLIC FACILITIES FINANCING CORPORATION, US
-AS20248 # Take 2 Hosting, Inc.
-AS44901 # BelCloud Hosting Corporation
-AS200904 # Foxcloud Llp
-AS53057 # RedeHost Internet Ltda.
-AS200532 # LLP Kompaniya Hoster.KZ
-AS50968 # Hostmaster, Ltd.
-AS135822 # Ovi Hosting Pvt Ltd
-AS55293 # A2 Hosting, Inc.
-AS57286 # Gigas Hosting S.A.
-AS201200 # SuperHosting.BG Ltd.
-AS24549 # Pacificnet Hosting Ltd
-AS39458 # Real Hosts Limited
-AS200000 # Hosting Ukraine LTD
-AS14576 # Hosting Solution Ltd.
-AS54290 # Hostwinds LLC.
-AS206898 # Server Hosting Pty Ltd
-AS60117 # Host Sailor Ltd.
-AS201553 # Excom cloud S.L.
-AS54825 # Packet Host, Inc.
-AS31472 # VoiceHost Ltd
-AS8556 # Levantis Hosting GmbH
-AS29119 # ServiHosting Networks S.L.
-AS60476 # MRG Hosting B.V.
-AS25532 # masterhost autonomous system
-AS49949 # 24 Solutions AB
-AS51698 # Activehost RU Ltd.
-AS42442 # Adacor Hosting GmbH
-AS11274 # Adhost Internet Advertising, LLC
-AS57345 # ADM-HOST di Ratti Alessandro
-AS54817 # ALDEN HOSTING LLC
-AS53342 # All Nine Hosting, Inc.
-AS33569 # ALLHOSTSHOP.COM
-AS201983 # Ansluten Hosting i Sverige AB
-AS132425 # APC Hosting Pte Ltd
-AS197395 # Ark B Hosting BV
-AS42699 # AS managedhosting.de GmbH
-AS31698 # AS Number for WebHost.ie Ltd
-AS42612 # ASN de Dinahosting SL
-AS29311 # ASP4all Hosting B.V.
-AS54527 # Astute Hosting Inc.
-AS63213 # Astute Hosting Inc.
-AS27175 # AtNetHost LLC
-AS13209 # Atom Hosting SRL
-AS29140 # Autonomous System Hostserver GmbH
-AS27223 # Bare Metal Hosting
-AS31659 # Below Zero Hosting Ltd.
-AS49834 # Best Hosting Company Ltd
-AS49693 # Best-Hoster Group Co. Ltd
-AS30152 # Beyond Hosting, LLC
-AS19133 # Bird Hosting Inc.
-AS198414 # Biznes-Host.pl sp. z o.o.
-AS45201 # BlueCentral Pty Ltd Hosting Solutions.
-AS31981 # BlueTower Hosting LLC
-AS62605 # Brain Host, LLC
-AS61280 # By Hosting B.V.
-AS53332 # C2Hosting, LLC
-AS61147 # CallHosted B.V.
-AS51109 # CAMELHOST SIA
-AS19234 # Canada Web Hosting
-AS40438 # Canhost Inc.
-AS58797 # Carpathia Hosting
-AS26978 # Carpathia Hosting, Inc.
-AS29748 # Carpathia Hosting, Inc.
-AS35974 # Carpathia Hosting, Inc.
-AS262990 # CENTER HOSTING TECNOLOGIA EIRELI
-AS43021 # Certit Hosting Handelsbolag
-AS39704 # CJ2 Hosting B.V.
-AS62899 # Clarity Web Hosting Inc.
-AS53281 # Clearpath Hosting
-AS59615 # CLOUD HOSTING LLC
-AS55761 # Colocation Hosting Sdn Bhd
-AS52335 # Colombia Hosting
-AS16973 # Corporacion Hostarica S.A.
-AS196827 # Credocom Hosting ApS
-AS32647 # Crucial Web Hosting, Ltd.
-AS14992 # CrystalTech Web Hosting Inc.
-AS198968 # Cyberneticos Hosting SL
-AS196745 # Datacenta Hosting Ltd
-AS62071 # Datahost SRL
-AS132869 # Dedicated-Hosting Solutions
-AS56106 # DEDICATEDGAMING.COM.AU - Hosting Provider AUSTRALIA
-AS32911 # DediPower Managed Hosting
-AS24931 # DediPower Managed Hosting Limited
-AS57669 # DediPower Managed Hosting Limited
-AS48896 # dhosting.pl Sp. z o.o.
-AS45481 # Digital Sense Data Centre Hosting Brisbane
-AS132509 # DIGIWEB ADVANCED HOSTING LIMITED
-AS39839 # DK Hostmaster A/S
-AS63129 # DL Host
-AS53370 # dotCOM host
-AS25048 # DSNet Hosting Limited
-AS28747 # Easyhost BVBA
-AS46433 # EBOUNDHOST.com
-AS55051 # EBOUNDHOST.com
-AS18570 # EchoStar Broadcasting Corperation
-AS13955 # Echostar Broadcasting Corporation
-AS16535 # Echostar Holding Purchasing Corporation
-AS22903 # Edgewebhosting.net
-AS9823 # Education Web Hosting
-AS46945 # Elite Hosts, Inc.
-AS263032 # Empire Host
-AS36536 # Enterhost
-AS50986 # Excellent Hosting Sweden AB
-AS199733 # Extrahost GmbH
-AS48825 # Fast2host Ltd
-AS35914 # FireHost, Inc.
-AS33552 # Fluid Hosting LLC
-AS52236 # G2KHosting S.A.
-AS28855 # GalacSYS is an hosting and managed services provider
-AS198347 # Game-Hosting GH AB
-AS40728 # GearHost, Inc.
-AS18120 # Gemini Software Solutions (P) Ltd. Hosting Services, India
-AS53914 # Genesis Hosting Solutions, LLC
-AS55720 # Gigabit Hosting Sdn Bhd
-AS27640 # GIGAS HOSTING USA, LLC
-AS62563 # GLOBALTELEHOST Corp.
-AS202118 # Go Hosting S.P.R.L.
-AS9290 # GoHosting
-AS45887 # GPLHost LLC
-AS51050 # H4Hosting B.V.
-AS20068 # Hawk Host Inc.
-AS49485 # High Availability Hosting Limited
-AS40374 # High Density Hosting, Inc.
-AS14415 # Host Collective, Inc.
-AS46873 # Host Color
-AS14384 # HOST DESIGNS, LLC
-AS54555 # Host Duplex, LLC
-AS263237 # HOST E.I.R.L.
-AS53918 # Host Hotels and Resorts, L.P.
-AS4851 # Host Networks
-AS32306 # Host NIT Inc
-AS133229 # Host Palace Internet Services
-AS28216 # Host Revenda
-AS36236 # Host Virtual, Inc
-AS42210 # Host Virtual, Inc
-AS51248 # Host-Telecom.com s.r.o.
-AS49815 # Host2 Ltd
-AS34649 # HOST365 LIMITED
-AS41562 # Host4all Sarl
-AS33260 # Hostasaurus, Inc.
-AS24220 # Hostcentral
-AS52347 # HOSTCLICK, de DUCA GRACIELA MIRTA
-AS45486 # HostCorp Internet
-AS53055 # HostDime.com.br Data Center
-AS51290 # HOSTEAM S.C. TOMASZ GROSZEWSKI BARTOSZ WASZAK LUKASZ GROSZEWSKI
-AS132225 # Hosted Continuity Pty Ltd
-AS133120 # Hosted Network Pty. Ltd.
-AS42776 # Hostel Ltd.
-AS55799 # Hostemo Technology Sdn Bhd
-AS48446 # Hostersi Sp. z o.o.
-AS263093 # Hostgator Brasil Hospedagem e suporte tecnico LTDA
-AS56732 # Hostinet AS
-AS42399 # Hosting Center LLC
-AS47385 # Hosting center Ltd.
-AS40539 # Hosting Consulting, Inc
-AS42244 # Hosting Operator eServer.ru Ltd.
-AS47549 # Hosting Systems Ltd
-AS200147 # Hosting Techniques Limited
-AS393326 # Hosting4Biz
-AS198171 # HOSTING90 systems s.r.o.
-AS57773 # HOSTINGBIT SRL
-AS47583 # Hostinger International Limited
-AS43472 # HostingMax Ltd
-AS32338 # Hostiserver Ltd
-AS9166 # HostIT NV
-AS62082 # Hostland LTD
-AS198651 # HOSTLINE, UAB
-AS24725 # Hostmaster LLC
-AS29067 # Hostmaster LLC
-AS197902 # Hostnet B.V.
-AS42418 # Hostnordic A/S
-AS29097 # Hostpoint AG, Switzerland
-AS196645 # Hostpro Ltd.
-AS56110 # HostRightNow Technologies India Pvt Ltd
-AS23535 # HostRocket.com, Inc.
-AS29869 # HostRocket.com, Inc.
-AS62756 # HostRocket.com, Inc.
-AS26484 # HOSTSPACE NETWORKS LLC
-AS25926 # HostUS
-AS15189 # HostVentures.com, Inc.
-AS20401 # Hostway Corporation
-AS24679 # Hostway Deutschland GmbH
-AS25128 # Hostway Deutschland GmbH
-AS39756 # HOSTWAY ROMANIA SRL
-AS32400 # Hostway Services, Inc.
-AS9412 # Hostworks Content Delivery System
-AS9667 # Hostworks Pty Ltd
-AS51294 # HUBARA hosting solutions S.L.
-AS23052 # ihost Solutions, Inc.
-AS28099 # iHosting Servicios Internet Ltda.
-AS45693 # INDIAGAMES TRANSIT AS Content hosting serivce India
-AS17881 # Inet Hosting Inc.
-AS17669 # INFOPLEX Hosting and Managed Service Provider Asia Pacific
-AS17918 # INFOPLEX Hosting and Managed Service Provider Asia Pacific
-AS50926 # Infortelecom Hosting, S.L.
-AS201634 # Ingram Micro Hosting B.V.
-AS22611 # InMotion Hosting, Inc.
-AS54641 # InMotion Hosting, Inc.
-AS132071 # Interhost Pacific Pty Ltd t/a Intervolve
-AS10207 # Interhost Pacific Pty Ltd t/a Intervolve.
-AS45577 # Interhost Pacific Pty Ltd t/a Intervolve.
-AS132070 # Interhost Pacific Pty Ltd t/a Intervolve.
-AS262603 # INTERNET E WEB HOSTING SERV DE INFORMATICA LTDA
-AS29883 # Internet Hosting Servers
-AS24558 # Internet Hosting Service Provider to the Aditya
-AS38279 # IOMNET-AS ISP/Hosting service Provider Manila
-AS199997 # Ippon Hosting SARL
-AS50465 # IQHost Ltd
-AS14120 # IT Hosting Services, LLC.
-AS11235 # Itron-Hosting
-AS50655 # Its Hosted
-AS17019 # JCHost Internet Services, LLC
-AS31240 # JSC Hosting Telesystems autonomous system
-AS199481 # K3 # Hosting Limited
-AS16862 # Kansas Hosting, LLC
-AS47161 # KosmoHost IT Technologies LTD
-AS56784 # Limited liability company MultiHOST MSK
-AS59791 # Linqhost B.V.
-AS59677 # LLC Kras-Host
-AS202023 # LLHost Inc
-AS199990 # LOCALHOST AS
-AS50872 # LOCALHOST D.O.O.
-AS54839 # Lowest Host/Empire Technology LLC
-AS58936 # Managed Hosted Applications Limited
-AS11230 # Managed Hosting Services, LLC
-AS62310 # managedhosting.de GmbH
-AS38894 # manageNET Pty Ltd hosting services
-AS47172 # Mart Jaco van Santen trading as Greenhost VOF
-AS262287 # Maxihost Hospedagem de Sites Ltda
-AS46260 # MEDHOST, Inc.
-AS14442 # Media-Hosts Inc.
-AS133143 # Medihost Solutions Pty Ltd
-AS197648 # MEGA HOST LIMITED
-AS39451 # Melbourne Server Hosting Ltd.
-AS58922 # Microchannel Hosting Pty Ltd
-AS27589 # MOJOHOST
-AS42400 # Multihost IT AS
-AS133393 # Naki Host Limited
-AS201597 # NE-IT Hosting B.V.
-AS28997 # Nedcomp Hosting B.V.
-AS60800 # Netwise Hosting Ltd.
-AS33322 # Network Data Center Host, Inc.
-AS199129 # Next point Host EOOD.
-AS197372 # NMA Hosting Solutions BV
-AS57752 # NORMHOST SARL
-AS201670 # Novahosting Ltd.
-AS14244 # NSI Hosting
-AS22152 # OC Hosting, Inc.
-AS34541 # Online Solutions Hosting Services
-AS196678 # OOO Hosterov
-AS43198 # Outsourcery Hosting LTD
-AS47625 # Paul David Hughes trading as Hosting Systems
-AS62049 # Penta Corporate Hosting Ltd
-AS35295 # PeterHost.Ru Hosting Provider at SPb
-AS42311 # PGHOSTING-DRESDEN-BACKBONE
-AS53589 # PlanetHoster
-AS59705 # POBOX Hosting Limited
-AS36791 # Portland Internet Hosting LLC
-AS14160 # Premium Hosting, Inc.
-AS34432 # Profihost AG
-AS41062 # ProstoHosting LTD
-AS59135 # PT Dapur Hosting
-AS201630 # QHOSTER LTD.
-AS25260 # QualityHosting AG
-AS23108 # Quantact Hosting Solutions, Inc.
-AS40281 # QWK.net Hosting, L.L.C.
-AS31590 # Rackhosting.com ApS
-AS10532 # Rackspace Hosting
-AS22720 # Rackspace Hosting
-AS27357 # Rackspace Hosting
-AS7595 # Readyspace Network Pte Ltd, Hosted Solutions Provider,Singapore
-AS26481 # Rebel Hosting
-AS29713 # Reliable Hosting Services
-AS62651 # Reliablehosting.com
-AS62838 # Reprise Hosting
-AS30849 # Research-and-production company Host Ltd
-AS14987 # Rethem Hosting LLC
-AS47577 # Righthosting Ltd
-AS54334 # Roya Hosting LLC
-AS63916 # RSH Hosting Network
-AS50915 # S.C. Everhost S.R.L.
-AS21217 # Safe Host SA
-AS59816 # SAFE HOSTS INTERNET LLP
-AS23273 # Santa Barbara Web Hosting, Inc.
-AS59632 # SC Pidgin Host SRL
-AS29452 # Secura Hosting Ltd
-AS59795 # SecurityLayer Hosting Solutions SRL
-AS60739 # Server Centre Hosting Ltd
-AS15919 # Servicios de Hosting en Internet S.A.
-AS49313 # Seva-Host Ltd
-AS57879 # sfip84 # Hosting und mehr UG haftungsbeschraenkt
-AS56617 # SIA VPS Hosting
-AS62088 # Sinarohost LTD
-AS45179 # SiteHost New Zealand
-AS27597 # Siteserver Hosting, Inc.
-AS201702 # skHosting.eu s.r.o.
-AS32740 # Sliqua Enterprise Hosting, Inc.
-AS58667 # SmartNet Hosting and connectivity
-AS12617 # Solido Hosting A/S
-AS199847 # SORTA-HOSTING-SMLLC
-AS25642 # Spiderhost Inc
-AS14567 # Springs Hosting
-AS35278 # SPRINTHOST.RU LLC
-AS197914 # Stockho Hosting SARL
-AS41079 # SuperHost.pl sp. z o.o.
-AS1442 # SureHosting Internet Solutions, Inc.
-AS43620 # Syan Limited Hosting
-AS197439 # Sylon Hosting GmbH
-AS198313 # SystemHOST Limited
-AS42705 # Talia provides VSAT network and hosting services worldwide.
-AS44398 # TDC Hosting
-AS13909 # Techie Hosting, Inc.
-AS34745 # TeleWare Hosted Services Ltd.
-AS24958 # The Bunker Secure Hosting Limited
-AS17971 # TM-VADS DC Hosting
-AS47143 # Todayhost Limited
-AS59854 # Top Level Hosting SRL
-AS57682 # TOV HOST VDS
-AS3722 # Tranquil Hosting, Inc.
-AS13647 # Tranquil Hosting, Inc.
-AS20450 # Trojan Hosting, LLC.
-AS30235 # Twinservers Hosting Solutions Inc.
-AS47205 # UAB HOSTEX
-AS23881 # UDomain Web Hosting Company Ltd
-AS198047 # UK Webhosting Ltd
-AS14986 # Ultra Hosting
-AS17920 # Ultra Serve Internet Pty Ltd - Transit AS - Hosting Provider
-AS32275 # Unified Webhosting, LLC
-AS50608 # Ventelo Hosting AS
-AS199213 # Venzo Hosting A/S
-AS262170 # Visualhosting.net
-AS201862 # VMhosts Ltd
-AS43541 # VSHosting s.r.o.
-AS24381 # Web Hosting and Colocation Services
-AS10200 # Web hosting provider and ISP connectivity.
-AS14708 # WebHost Chile S.A.
-AS27229 # Webhosting.Net, Inc.
-AS48093 # Webland Hosting AB
-AS42465 # Websense Hosted Security - Anycast network
-AS7598 # Websense Hosted Security - AsiaPac region
-AS55229 # White Sands Hosting
-AS7349 # Windstream Hosted Solutions, LLC
-AS33251 # Windstream Hosted Solutions, LLC
-AS52465 # WNet Internet y Hosting
-AS52270 # X-Host SRL
-AS45152 # Zone Networks Pty Ltd, Managed Hosting Solutions
-AS8477 # ZTS Echostar Studio Poznan Poland
-AS198153 # AS SEIDOR DATACENTER SANTANDER
-AS52925 # Ascenty DataCenters Locacao e Servicos LTDA
-AS61412 # BunkerInfra Datacenters BV
-AS262978 # Centro de Tecnologia Armazem Datacenter Ltda.
-AS53225 # DATACENTER
-AS41427 # DataCenter d.o.o.
-AS53101 # Datacenter e Provedores Ltda-ME
-AS41369 # DataCenter Finland Oy
-AS35467 # DataCenter Fryslan AS
-AS59554 # Datacenter Groningen B.V.
-AS52674 # DATACENTER LTDA
-AS24611 # Datacenter Luxembourg S.A.
-AS48812 # DataCenter Noord BV
-AS40715 # DataCenter.BZ, LLC
-AS201449 # Digital Absolut Business - Servidor, Virtualizacao, Cluster, Datacenters e Telecomunicacoes
-AS52321 # Fideicomiso de Administración Datacenter Capitalinas
-AS29331 # Forsikringens Datacenter A/S
-AS201709 # HanDS Hanse Datacenter Services GmbH
-AS53221 # INTERNET DATACENTER
-AS198432 # Ipcore Datacenters S.L
-AS51241 # Iran Post Company-Tehran DataCenter
-AS56799 # Jordens Datacenter NV
-AS26277 # Las Vegas NV Datacenter
-AS58113 # LIR DATACENTER TELECOM SRL
-AS28333 # Local Datacenter Soluções em Comunicação Ltda.
-AS42120 # MODIT Datacenter Informatikai es Szolgaltato KFT
-AS6718 # NAV DATACENTER TELECOM SRL
-AS20692 # NetGate Datacenter ASN
-AS17439 # Netmagic Datacenter Mumbai
-AS132717 # NxtGen Datacenter &amp; Cloud Technologies Pvt. Ltd.
-AS9925 # Powerbase DataCenter Services (HK) Ltd.
-AS132779 # RackBank Datacenters Private Ltd
-AS42622 # Teknik i Media Datacenter Stockholm AB
-AS6188 # VPS Datacenter, LLC
-AS40819 # VPS Datacenter, LLC
-AS24997 # AS for CDN
-AS38107 # CDNetworks
-AS36408 # CDNetworks Inc.
-AS57363 # CDNvideo LLC
-AS46177 # SimpleCDN Technologies, Inc.
-AS62026 # SkyparkCDN Ltd.
-AS61107 # UNIVERSAL CDN (CYPRUS) LTD
-AS35540 # OVH SAS
-AS59711 # HZ Hosting Ltd
-AS61046 # HZ Hosting Ltd
-AS34011 # Host Europe GmbH
-AS202015 # HZ Hosting Ltd
-AS394474 # WhiteLabelColo
-AS205016 # Opera Software AS
-AS204601 # Zomro B.V.
-AS46606 # Unified Layer
-AS25291 # SysEleven GmbH
-AS206246 # REACH MEDIA SKY LLP
-AS37518 # Fiber Grid INC
-AS39832 # Opera Software AS
-AS60729 # Zwiebelfreunde e.V.
-AS208323 # Foundation for Applied Privacy
-AS202276 # IBOSS, INC
-AS213010 # GigaHostingServices OU
-AS35913 # DediPath
-AS136907 # HUAWEI CLOUDS
-AS24806 # INTERNET CZ, a.s.
-AS15694 # Atman S.A.
-AS41406 # Atman S.A.
-AS57367 # Atman S.A.
-AS197226 # SPRINT S.A.
-AS200088 # Artnet Sp. z o.o.
-AS42927 # S-NET Sp. z o.o.
-AS29522 # H88 S.A.
-AS203417 # LH.pl Sp. z o.o.
-AS47544 # IQ PL Sp. z o.o.
-AS43962 # INTEN J. Granat
-AS208566 # Rozetka Sp. z o.o.
-AS12824 # home.pl S.A.
-AS15967 # Nazwa.pl Sp.z.o.o.
-AS201814 # Meverywhere sp. z o.o.
-AS60713 # Agnat Sp. z o.o. - EXEA Sp. z o.o.
-AS206589 # NSIX Data Center sp. z o.o.
-AS47223 # Lukman Multimedia Sp. z o.o
-AS20552 # Horyzont Technologie Internetowe sp.z.o.o.
-AS48505 # Kylos sp. z o.o.
-AS31242 # 3S S.A.
-AS59472 # Sinersio Polska Sp. z o.o.
-AS29593 # WOJCIECH LOREK ENDOR COMPUTERS
-AS15391 # FORMAT sp. z o.o.
-AS39566 # Smarthost sp. z o.o.
-AS48031 # PE Ivanov Vitaliy Sergeevich
-AS60362 # ALWAYSDATA SARL
-AS61138 # Zappie Host LLC
-AS206216 # Advin Services LLC
-AS210779 # BREEZLE LLC
-AS149020 # WebHorizon Internet Services
-AS203758 # eugamehost.com
-AS399804 # Hostodo
-AS23470 # ReliableSite.Net LLC
-AS199785 # Cloud Hosting Solutions, Limited
-AS33696 # NextArray LLC
-AS34927 # iFog GmbH
-AS30836 # 23VNet Kft
-AS210329 # Kamatera Inc
-AS40476 # Scala Hosting LLC
-AS42532 # SIA VEESP
-AS51862 # IONOS SE
-AS26347 # New Dream Network, LLC
-AS8560  # IONOS SE
-AS60362 # ALWAYSDATA SARL https://ipinfo.io/AS60362
-AS26548 # PureVoltage https://ipinfo.io/AS26548
-AS52000 # MIRholding https://ipinfo.io/AS52000
-AS16652 # Riseup Networks www.ipqualityscore.com/asn-details/AS16652/riseup-networks
-AS9009 # M247 Europe SRL
-AS42675 # https://obe.net/hosting
-AS329184 # Host Africa (Pty) Ltd https://ipinfo.io/AS329184
-AS212238 # CDNEXT, GB
-AS62005 # BlueVPS OU
-AS141995 # CAPL-AS-AP Contabo Asia Private Limited https://asn.ipinfo.app/AS141995
-AS12222 # Akami - https://asn.ipinfo.app/AS12222
-AS16625 # Akami-AS - https://asn.ipinfo.app/AS16625
-AS20940 # Akami International - https://asn.ipinfo.app/AS20940
-AS21342 # Akami Internation #2 - https://asn.ipinfo.app/AS21342
-AS24319 # Akami Tokyo - https://asn.ipinfo.app/AS24319
-AS33905 # Akami AMS - https://asn.ipinfo.app/AS33905
-AS34164 # Akami London - https://asn.ipinfo.app/AS34164
-AS35994 # Akami AS - https://asn.ipinfo.app/AS35994
-AS36183 # Akami AS - https://asn.ipinfo.app/AS36183
-AS197540 # NetCup - https://asn.ipinfo.app/AS197540
-AS396982 # Google Cloud Platform, US
-AS213230 # Hetzner Cloud2, DE
-AS212317 # Hetzner Cloud3, DE
-AS215859 # Hetzner Cloud4, DE
-AS44477 # Stark Industries (kerbs)
-AS55990 # Huawei
-AS19148 # Leaseweb
-AS27411 # Leaseweb
-AS30633 # Leaseweb
-AS59253 # Leaseweb
-AS60781 # Leaseweb
-AS133752 # Leaseweb
-AS134351 # Leaseweb
-AS136988 # Leaseweb
-AS205544 # Leaseweb
-AS393886 # Leaseweb
-AS394380 # Leaseweb
-AS395954 # Leaseweb
-AS396190 # Leaseweb
-AS396362 # Leaseweb
-AS132203 # Tencent
-AS142036 # Hosteons
-AS134963 # Alibaba
-AS214036 # Ultrahost
-AS44803 # Webdock.io
-AS12200 # Rackspace
-AS15395 # Rackspace
-AS19994 # Rackspace
-AS58683 # Rackspace
-AS36007 # Kamatera
-AS64022 # Kamatera
-AS210329 # Kamatera
-AS206092 # internet.lv (XS Usenet, ExpressVPN, etc)
-AS57433 # Intercolo
-AS212861 # Intercolo
-AS64286 # LogicWeb
-AS216071 # VDSINA 
-AS48282 # VDSINA
-AS31898 # Oracle cloud
-AS58065 # Fiber Grid/PacketExchange
-AS137409 # Global Secure Layer Data Center
-AS52468 # UFINET 
-AS265620 # UFINET
-AS200350 # Yandex
-AS208795 # Yandex
-AS197155 # Artnet
-AS200088 # Artnet
-AS53667 # FranTech Solutions
-AS141039 # PacketHub
-AS147049 # PacketHub
-AS136557 # Host Universal Pty Ltd
-AS197706 # Keminet SHPK
-AS210558 # 1337 Services GmbH
-AS202448 # MVPS LTD
-AS64249 # endoffice.com
-AS397373 # h4y.us
-AS50835 # Eancenter Telecom LLC
-AS62904 # Eonix Corporation
-AS14956 # RouterHosting LLC
-AS55286	# SERVER-MANIA, CA
-AS6698	# VIRTUALSYSTEMS, UA
-AS136052 # IDNIC-IDCLOUDHOST-AS-ID PT Cloud Hosting Indonesia, ID
-AS20773	# GODADDY, DE
-AS21499	# GODADDY-SXB, DE
-AS21501	# GODADDY-AMS, DE
-AS26496	# AS-26496-GO-DADDY-COM-LLC, US
-AS60253	# GODADDY-CGN, DE
-AS398101 # GO-DADDY-COM-LLC, US
-AS398787 # GO-DADDY-COM-LLC, US
-AS400754 # GO-DADDY-COM-LLC, US
-AS35048 # BITERIKA-AS, RU
-AS214574 # BITERIKA-ZEL-AS, RU
-AS208969 # BITERIKA-BY-AS, RU
-AS39486 # HOSTROYALE, IN
-AS44144	# OMEGASOFT, IN
-AS46516	# GLOBEIX, US
-AS133499 # HOSTROYALETECHNOLOGIES-AS-AP HostRoyale Technologies Pvt Ltd, NZ
-AS134450 # HOSTROYALETECHNOLOGIES-AS-AP HostRoyale Technologies Pvt Ltd, IN
-AS203020 # HOSTROYALE, IN
-AS204287 # HOSTROYALE_TECHNOLOGIES, IN
-AS207990 # HR-CUSTOMER, IN
-AS396931 # HOSTROYALE-TECHNOLOGIES-02, US
-AS138608 # CLOUDHOST-AS-AP Cloud Host Pte Ltd, SG
-AS13378 # Qingye Cloud, US
-AS63567 # Suqian Pugongying Network Service Co Ltd, CN
-AS210731 # Forening for DotSrc, DE
-AS211619 # MAXKO, HR
-AS152390 # https://github.com/X4BNet/lists_vpn/issues/213
-AS204957 # https://github.com/X4BNet/lists_vpn/issues/230
-AS60435 # https://github.com/X4BNet/lists_vpn/issues/235
-AS43128 # https://github.com/X4BNet/lists_vpn/issues/235
-AS41828 # https://github.com/X4BNet/lists_vpn/issues/235
-AS48894 # https://github.com/X4BNet/lists_vpn/issues/235
-AS28682 # https://github.com/X4BNet/lists_vpn/issues/235
-AS198524 # https://github.com/X4BNet/lists_vpn/issues/235
-AS51790 # https://github.com/X4BNet/lists_vpn/issues/235
-AS60973 # https://github.com/X4BNet/lists_vpn/issues/235
-AS6764 # https://github.com/X4BNet/lists_vpn/issues/235
-AS56635 # https://github.com/X4BNet/lists_vpn/issues/235
-AS5435 # https://github.com/X4BNet/lists_vpn/issues/235
-AS135377 # https://github.com/X4BNet/lists_vpn/issues/236
-AS59787 # https://github.com/X4BNet/lists_vpn/issues/238
+45090
+3223
+3561
+3842
+4250
+4323
+4694
+5577
+6724
+6870
+6939
+7203
+7489
+7506
+7850
+7979
+8075
+8100
+8455
+8560
+8849
+8972
+9370
+10297
+10439
+10929
+11588
+11831
+11878
+12586
+12876
+12989
+13213
+13739
+13926
+14061
+14127
+14618
+15003
+15083
+15169
+15395
+15497
+15510
+15626
+15734
+16125
+16262
+16276
+16284
+16397
+16509
+16628
+17216
+18450
+18779
+18978
+19084
+19318
+19437
+19531
+19624
+19844
+19871
+19969
+20021
+20264
+20454
+20473
+20598
+20738
+20773
+20836
+20860
+21100
+21159
+21321
+21859
+22363
+22552
+22781
+23033
+23342
+23352
+24482
+24768
+24875
+24940
+24961
+24971
+25163
+25369
+25379
+25780
+25820
+27257
+28753
+29066
+29073
+29182
+29302
+29354
+29550
+29691
+29802
+29838
+29854
+30083
+30176
+30475
+30633
+30693
+30900
+30998
+31034
+31103
+32097
+32181
+32244
+32475
+32489
+32613
+32780
+33070
+33083
+33182
+33302
+33330
+33387
+33438
+33480
+33724
+33785
+33891
+34305
+34971
+34989
+35017
+35366
+35415
+35470
+35662
+35908
+35916
+36024
+36114
+36290
+36351
+36352
+36666
+36887
+36970
+37018
+37088
+37153
+37170
+37209
+37230
+37248
+37269
+37280
+37308
+37347
+37377
+37472
+37506
+37521
+37540
+37643
+37661
+37692
+37714
+38001
+39020
+39326
+39351
+39392
+39572
+40156
+40244
+40676
+40824
+40861
+41653
+41665
+42160
+42331
+42473
+42695
+42708
+42730
+42831
+43146
+49505
+43289
+43317
+43350
+44050
+44066
+45102
+45187
+45470
+45671
+45815
+46261
+46430
+46475
+46562
+46664
+46805
+46816
+46844
+47328
+47447
+47588
+49349
+49367
+49453
+49532
+49544
+49981
+50297
+50613
+50673
+51159
+51167
+51191
+51395
+51430
+51731
+51765
+51852
+52048
+52173
+52219
+53013
+53340
+53559
+53597
+53667
+53755
+53850
+53889
+54104
+54203
+54455
+54489
+54500
+54540
+55225
+55286
+55536
+55933
+55967
+56322
+56630
+56934
+57043
+57169
+57230
+57858
+58073
+58305
+59253
+59349
+59432
+59504
+59729
+59764
+60011
+60068
+60118
+60404
+60485
+60505
+60558
+60567
+60781
+61102
+61157
+61317
+61440
+62217
+62240
+62282
+62370
+62471
+62540
+62567
+63008
+63018
+63119
+63128
+63199
+63473
+63949
+64245
+64484
+132816
+133296
+133480
+133752
+134451
+136258
+197155
+197328
+198310
+198605
+199653
+199883
+200019
+200039
+201011
+201525
+202053
+202836
+203523
+203629
+204196
+205053
+327705
+327784
+327813
+327942
+328035
+394256
+394330
+394380
+395089
+395111
+395978
+20248
+44901
+200904
+53057
+200532
+50968
+135822
+55293
+57286
+201200
+24549
+39458
+200000
+14576
+54290
+206898
+60117
+201553
+54825
+31472
+8556
+29119
+60476
+25532
+49949
+51698
+42442
+11274
+57345
+54817
+53342
+33569
+201983
+132425
+197395
+42699
+31698
+42612
+29311
+54527
+63213
+27175
+13209
+29140
+27223
+31659
+49834
+49693
+30152
+19133
+198414
+45201
+31981
+62605
+61280
+53332
+61147
+51109
+19234
+40438
+58797
+26978
+29748
+35974
+262990
+43021
+39704
+62899
+53281
+59615
+55761
+52335
+16973
+196827
+32647
+14992
+198968
+196745
+62071
+132869
+56106
+32911
+24931
+57669
+48896
+45481
+132509
+39839
+63129
+53370
+25048
+28747
+46433
+55051
+18570
+13955
+16535
+22903
+9823
+46945
+263032
+36536
+50986
+199733
+48825
+35914
+33552
+52236
+28855
+198347
+40728
+18120
+53914
+55720
+27640
+62563
+202118
+9290
+45887
+51050
+20068
+49485
+40374
+14415
+46873
+14384
+54555
+263237
+53918
+4851
+32306
+133229
+28216
+36236
+42210
+51248
+49815
+34649
+41562
+33260
+24220
+52347
+45486
+53055
+51290
+132225
+133120
+42776
+55799
+48446
+263093
+56732
+42399
+47385
+40539
+42244
+47549
+200147
+393326
+198171
+57773
+47583
+43472
+32338
+9166
+62082
+198651
+24725
+29067
+197902
+42418
+29097
+196645
+56110
+23535
+29869
+62756
+26484
+25926
+15189
+20401
+24679
+25128
+39756
+32400
+9412
+9667
+51294
+23052
+28099
+45693
+17881
+17669
+17918
+50926
+201634
+22611
+54641
+132071
+10207
+45577
+132070
+262603
+29883
+24558
+38279
+199997
+50465
+14120
+11235
+50655
+17019
+31240
+199481
+16862
+47161
+56784
+59791
+59677
+202023
+199990
+50872
+54839
+58936
+11230
+62310
+38894
+47172
+262287
+46260
+14442
+133143
+197648
+39451
+58922
+27589
+42400
+133393
+201597
+28997
+60800
+33322
+199129
+197372
+57752
+201670
+14244
+22152
+34541
+196678
+43198
+47625
+62049
+35295
+42311
+53589
+59705
+36791
+14160
+34432
+41062
+59135
+201630
+25260
+23108
+40281
+31590
+10532
+22720
+27357
+7595
+26481
+29713
+62651
+62838
+30849
+14987
+47577
+54334
+63916
+50915
+21217
+59816
+23273
+59632
+29452
+59795
+60739
+15919
+49313
+57879
+56617
+62088
+45179
+27597
+201702
+32740
+58667
+12617
+199847
+25642
+14567
+35278
+197914
+41079
+1442
+43620
+197439
+198313
+42705
+44398
+13909
+34745
+24958
+17971
+47143
+59854
+57682
+3722
+13647
+20450
+30235
+47205
+23881
+198047
+14986
+17920
+32275
+50608
+199213
+262170
+201862
+43541
+24381
+10200
+14708
+27229
+48093
+42465
+7598
+55229
+7349
+33251
+52465
+52270
+45152
+8477
+198153
+52925
+61412
+262978
+53225
+41427
+53101
+41369
+35467
+59554
+52674
+24611
+48812
+40715
+201449
+52321
+29331
+201709
+53221
+198432
+51241
+56799
+26277
+58113
+28333
+42120
+6718
+20692
+17439
+132717
+9925
+132779
+42622
+6188
+40819
+24997
+38107
+36408
+57363
+46177
+62026
+61107
+35540
+59711
+61046
+34011
+202015
+394474
+205016
+204601
+46606
+25291
+206246
+37518
+39832
+60729
+208323
+202276
+213010
+35913
+136907
+24806
+15694
+41406
+57367
+197226
+200088
+42927
+29522
+203417
+47544
+43962
+208566
+12824
+15967
+201814
+60713
+206589
+47223
+20552
+48505
+31242
+59472
+29593
+15391
+39566
+48031
+60362
+61138
+206216
+210779
+149020
+203758
+399804
+23470
+199785
+33696
+34927
+30836
+210329
+40476
+42532
+51862
+26347
+8560 
+60362
+26548
+52000
+16652
+9009
+42675
+329184
+212238
+62005
+141995
+12222
+16625
+20940
+21342
+24319
+33905
+34164
+35994
+36183
+197540
+396982
+213230
+212317
+215859
+44477
+55990
+19148
+27411
+30633
+59253
+60781
+133752
+134351
+136988
+205544
+393886
+394380
+395954
+396190
+396362
+132203
+142036
+134963
+214036
+44803
+12200
+15395
+19994
+58683
+36007
+64022
+210329
+206092
+57433
+212861
+64286
+216071
+48282
+31898
+58065
+137409
+52468
+265620
+200350
+208795
+197155
+200088
+53667
+141039
+147049
+136557
+197706
+210558
+202448
+64249
+397373
+50835
+62904
+14956
+55286	# SERVER-MANIA, CA
+6698	# VIRTUALSYSTEMS, UA
+136052
+20773	# GODADDY, DE
+21499	# GODADDY-SXB, DE
+21501	# GODADDY-AMS, DE
+26496	# AS-26496-GO-DADDY-COM-LLC, US
+60253	# GODADDY-CGN, DE
+398101
+398787
+400754
+35048
+214574
+208969
+39486
+44144	# OMEGASOFT, IN
+46516	# GLOBEIX, US
+133499
+134450
+203020
+204287
+207990
+396931
+138608
+13378
+63567
+210731
+211619
+152390
+204957
+60435
+43128
+41828
+48894
+28682
+198524
+51790
+60973
+6764
+56635
+5435
+135377
+59787
