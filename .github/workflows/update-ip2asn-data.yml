@@ -48,7 +48,7 @@ jobs:
           # Verify the file was downloaded and is not empty
           test -s /tmp/ASN.txt
           sed 's/^AS//' /tmp/ASN.txt > /tmp/ASN.txt.fix1
-          sed 's/ \#.*//' /tmp/ASN.txt.fix1 > data/asn/ASN.txt
+          sed 's/\s\#.*//' /tmp/ASN.txt.fix1 > data/asn/ASN.txt
           test -s data/asn/ASN.txt
 
       - name: Download the full list of autonomous systems ASN info from ipverse/asn-info
