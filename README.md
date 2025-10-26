@@ -18,7 +18,7 @@ in CIDR notation. Each record is in CIDR format which represents a block of IP a
 cloud service provider. All lists are sorted in ascending order, with IPv4 addresses listed before IPv6 addresses when both are present.
 
 ## ASN Lists
-The lists are available in folders found in the `[lists/asn/](lists/asn/)` directory. Each list is named according to the datacenter or cloud service provider it represents. The naming convention follows the format: `provider-name[-ip-version].txt`. Each named cloud provider may have up to 3 variations of the lists that include both IPv4 and IPv6 addresses, IPv4 only, or IPv6 only. The provider name 'all' is used to indicate that the list contains IP address ranges of ALL providers combined into a single file. The provider name 'other' is used to indicate that the list contains IP address ranges of other providers other than the ones listed in the provider specific files.
+The lists are available in folders found in the [lists/asn/](lists/asn/) directory. Each list is named according to the datacenter or cloud service provider it represents. The naming convention follows the format: `provider-name[-ip-version].txt`. Each named cloud provider may have up to 3 variations of the lists that include both IPv4 and IPv6 addresses, IPv4 only, or IPv6 only. The provider name 'all' is used to indicate that the list contains IP address ranges of ALL providers combined into a single file. The provider name 'other' is used to indicate that the list contains IP address ranges of other providers other than the ones listed in the provider specific files.
  
 Examples of list file names:
 - `aws.txt`: Contains both IPv4 and IPv6 address ranges for Amazon Web Services.
@@ -30,7 +30,7 @@ Examples of list file names:
 The `all` list can be thought of as an aggregate of the `other` list and individual provider lists.
 
 ## Source Provider Lists
-In addition to the ASN based lists, there are also lists generated from specific cloud service providers' published IP range data. These lists are found in the `[lists/source/](lists/source/)` directory. Each list is named according to the cloud service provider it represents, following the same naming convention as the ASN lists.
+In addition to the ASN based lists, there are also lists generated from specific cloud service providers' published IP range data. These lists are found in the [lists/source/](lists/source/) directory. Each list is named according to the cloud service provider it represents, following the same naming convention as the ASN lists.
 
 Source provider lists do not have an `all` or `other` variation as they are specific to each provider's published data.
 
