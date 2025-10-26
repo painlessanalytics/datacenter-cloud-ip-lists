@@ -18,7 +18,7 @@ in CIDR notation. Each record is in CIDR format which represents a block of IP a
 cloud service provider. All lists are sorted in ascending order, with IPv4 addresses listed before IPv6 addresses when both are present.
 
 ## ASN Lists
-The lists are available in folders found in the `lists/asn/` directory. Each list is named according to the datacenter or cloud service provider it represents. The naming convention follows the format: `provider-name[-ip-version].txt`. Each named cloud provider may have up to 3 variations of the lists that include both IPv4 and IPv6 addresses, IPv4 only, or IPv6 only. The provider name 'all' is used to indicate that the list contains IP address ranges of ALL providers combined into a single file. The provider name 'other' is used to indicate that the list contains IP address ranges of other providers other than the ones listed in the provider specific files.
+The lists are available in folders found in the `[lists/asn/](lists/asn/)` directory. Each list is named according to the datacenter or cloud service provider it represents. The naming convention follows the format: `provider-name[-ip-version].txt`. Each named cloud provider may have up to 3 variations of the lists that include both IPv4 and IPv6 addresses, IPv4 only, or IPv6 only. The provider name 'all' is used to indicate that the list contains IP address ranges of ALL providers combined into a single file. The provider name 'other' is used to indicate that the list contains IP address ranges of other providers other than the ones listed in the provider specific files.
  
 Examples of list file names:
 - `aws.txt`: Contains both IPv4 and IPv6 address ranges for Amazon Web Services.
@@ -27,10 +27,10 @@ Examples of list file names:
 - `all.txt`: Contains both IPv4 and IPv6 address ranges for all listed providers combined.
 - `other.txt`: Contains both IPv4 and IPv6 address ranges for all other providers except for the ones listed in the provider specific files.
 
-The `all` lists can be thought of as an aggregate of the `other` list and individual provider lists.
+The `all` list can be thought of as an aggregate of the `other` list and individual provider lists.
 
 ## Source Provider Lists
-In addition to the ASN based lists, there are also lists generated from specific cloud service providers' published IP range data. These lists are found in the `lists/source/` directory. Each list is named according to the cloud service provider it represents, following the same naming convention as the ASN lists.
+In addition to the ASN based lists, there are also lists generated from specific cloud service providers' published IP range data. These lists are found in the `[lists/source/](lists/source/)` directory. Each list is named according to the cloud service provider it represents, following the same naming convention as the ASN lists.
 
 Source provider lists do not have an `all` or `other` variation as they are specific to each provider's published data.
 
@@ -51,10 +51,10 @@ Special thanks to the following projects and contributors and their maintainers 
 - [iptoasn.com](https://iptoasn.com/) - For providing IP to ASN mapping data.
 - [shivammathur/setup-php](https://github.com/shivammathur/setup-php) - For providing PHP setup actions for GitHub workflows.
 - Deep in the weeds:
--- [mlocati/ip-lib](https://github.com/mlocati/ip-lib) - A PHP library for IP address manipulation and validation.
--- [composer/composer](https://github.com/composer/composer) - Dependency Manager for PHP.
--- [PHP](https://www.php.net) - The programming language used for scripting in this project.
--- [GitHub](https://github.com/) - For providing GIT, automating workflows, and continuous integration.
+  - [mlocati/ip-lib](https://github.com/mlocati/ip-lib) - A PHP library for IP address manipulation and validation.
+  - [composer/composer](https://github.com/composer/composer) - Dependency Manager for PHP.
+  - [PHP](https://www.php.net) - The programming language used for scripting in this project.
+  - [GitHub](https://github.com/) - For providing GIT, automating workflows, and continuous integration.
 
 Their contributions to the open-source community are greatly appreciated! Please consider supporting their work by visiting their sites and contributing feedback, code, and/or financially if possible.  
 
