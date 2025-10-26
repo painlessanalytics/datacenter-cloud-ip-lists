@@ -110,7 +110,7 @@ foreach ($results as $provider => $ipVersions) {
 
     // Sort the ranges then save to file
     sort($allRanges);
-    $outputFilePath = dirname(dirname(__FILE__)) . sprintf('/lists/asn/%s_%s.txt', $provider, $ipVersion);
+    $outputFilePath = dirname(dirname(__FILE__)) . sprintf('/lists/asn/%s-%s.txt', $provider, $ipVersion);
     $outputFile = fopen($outputFilePath, 'w');
     if ($outputFile === false) {
       echo "Failed to open file for writing: $outputFilePath\n";
@@ -131,7 +131,7 @@ foreach ($results as $provider => $ipVersions) {
     }
     
     // Save aggregated (simplified) ranges back to file
-    $outputFilePath = dirname(dirname(__FILE__)) . sprintf('/lists/asn/aggregated/%s_%s.txt', $provider, $ipVersion);
+    $outputFilePath = dirname(dirname(__FILE__)) . sprintf('/lists/asn/aggregated/%s-%s.txt', $provider, $ipVersion);
     $outputFile = fopen($outputFilePath, 'w');
     if ($outputFile === false) {
       echo "Failed to open file for writing: $outputFilePath\n";

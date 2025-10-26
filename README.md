@@ -1,6 +1,42 @@
 # datacenter-cloud-ip-lists
 Datacenter and Cloud Services Public IP Lists.
 
+## Introduction
+This repository provides curated lists of IPv4 and IPv6 address ranges associated with major datacenter and cloud service providers. 
+These lists are useful for network administrators, security professionals, and developers who need to identify and manage traffic 
+from these sources. The data is sourced from reputable projects and is updated weekly to ensure accuracy.
+
+This list was heavily influenced by the excellent work done by [X4BNet/lists_vpn](https://github.com/X4BNet/lists_vpn). Our needs 
+require IPv6 as well as IPv4 addresses with additional lists specifically listing the top cloud service providers utilizing their 
+source lists rather than rely on ARN data. Many thanks to X4BNet for their foundational work!
+
+All lists provided in this repository are in the public domain and can be freely used and distributed. See the License section 
+below for more details.
+
+All lists are saved as txt files with records separated by new lines. Each line contains either IPv4, IPv6, or both address ranges 
+in CIDR notation. Each record is in CIDR format which represents a block of IP addresses assigned to a specific datacenter or 
+cloud service provider. All lists are sorted in ascending order, with IPv4 addresses listed before IPv6 addresses when both are present.
+
+# ASN Lists
+The lists are available in folders found in the `lists/asn/` directory. Each list is named according to the datacenter or cloud service provider it represents. The naming convention follows the format: `provider-name[-ip-version].txt`. Each named cloud provider may have up to 3 variations of the lists that include both IPv4 and IPv6 addresses, IPv4 only, or IPv6 only. The provider name 'all' is used to indicate that the list contains IP address ranges of ALL providers combined into a single file. The provider name 'other' is used to indicate that the list contains IP address ranges of other providers other than the ones listed in the provider specific files.
+ 
+Examples of list file names:
+- `aws.txt`: Contains both IPv4 and IPv6 address ranges for Amazon Web Services.
+- `googlecloud-ipv4.txt`: Contains only IPv4 address ranges for Google Cloud Platform.
+- `azure-ipv6.txt`: Contains only IPv6 address ranges for Microsoft Azure.
+- `all.txt`: Contains both IPv4 and IPv6 address ranges for all listed providers combined.
+- `other.txt`: Contains both IPv4 and IPv6 address ranges for all other providers except for the ones listed in the provider specific files.
+
+The `all` lists can be thought of as an aggregate of the `other` list and individual provider lists.
+
+### Aggregated Lists
+In addition to the individual provider lists, there is a sub folder named `aggregated/` that contains an aggregated (simplified) version of the lists. Aggregated lists simplify multiple CIDR blocks when possible.
+
+Note that the aggregated lists may not be identical to the sum of the individual provider lists due to the simplification process.
+
+**What is an aggregated (simplified) list?**
+An aggregated list combines multiple CIDR blocks into larger blocks when possible, reducing the total number of entries. This is useful for optimizing firewall rules and routing tables, as it minimizes the number of entries that need to be processed.
+
 # Special Thanks
 Special thanks to the following projects and contributors and their maintainers for providing valuable data sources that made this repository possible:
 
