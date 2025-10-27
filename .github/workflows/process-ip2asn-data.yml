@@ -1,9 +1,11 @@
 # process-ip2asn-data.yml
-name: Process ASN Template
+name: Process ASN Data
 run-name: Process Data
 
 on:
   workflow_call:
+
+  workflow_dispatch: # Allow manual triggering for testing
 
 jobs:
   update-data:
