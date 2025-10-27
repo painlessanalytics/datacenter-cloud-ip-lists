@@ -6,7 +6,7 @@
 
 // Composer autoload
 require 'vendor/autoload.php';
-require_once dirname(__FILE__) . '/aggregate.include.php';
+require_once dirname(__FILE__) . '/cidr.include.php';
 
 // Store in microseconds time script started
 $startTime = microtime(true);

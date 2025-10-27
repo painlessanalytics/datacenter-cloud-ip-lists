@@ -1,0 +1,46 @@
+# update-provider-sources.yml
+name: Update Provider Sources
+run-name: Update Sources
+
+on:
+  workflow_call:
+
+  workflow_dispatch: # Allow manual triggering for testing
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, zlib, gmp
+          tools: composer
+      
+      - name: Composer Install
+        run: composer install --working-dir=bin/
+
+      - name: Update Provider Sources
+        run: php bin/update_provider_sources.php
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add lists/source/*.txt
+          git add lists/source/aggregated/*.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update provider source lists"
+            git push
+          fi

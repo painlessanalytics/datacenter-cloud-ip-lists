@@ -1,0 +1,20 @@
+{
+  "title": "Cloud Service Provider IP Ranges",
+  "description": "This file contains a list of URLs from which to fetch IP ranges for various cloud service providers.",
+  "pre_download_list": {
+    "azure": "https://www.microsoft.com/en-us/download/details.aspx?id=56519"
+  },
+  "replace_download_list": {
+    "azure": "https://download.microsoft.com/download/7/1/d/71d86715-5596-4529-9b13-da13a5de5b63/ServiceTags_Public_%YYYYMMDD%.json"
+  },
+  "download_list": {
+    "aws": "https://ip-ranges.amazonaws.com/ip-ranges.json",
+    "google-cloud": "https://www.gstatic.com/ipranges/cloud.json",
+    "digitalocean": "https://digitalocean.com/geo/google.csv",
+    "cloudflare_ipv4": "https://www.cloudflare.com/ips-v4",
+    "cloudflare_ipv6": "https://www.cloudflare.com/ips-v6",
+    "oracle-cloud": "https://docs.oracle.com/iaas/tools/public_ip_ranges.json",
+    "linode": "https://geoip.linode.com/",
+    "github": "https://api.github.com/meta"
+  }
+}

@@ -1,9 +1,11 @@
 # update-ip2asn-data.yml
-name: Update ASN Template
+name: Update ASN Data
 run-name: Update Data
 
 on:
   workflow_call:
+
+  workflow_dispatch: # Allow manual triggering for testing
 
 jobs:
   update-data:

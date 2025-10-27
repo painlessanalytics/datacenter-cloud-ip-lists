@@ -2,6 +2,7 @@
     "name": "painlessanalytics/datacenter-cloud-ip-lists",
     "type": "project",
     "require": {
-        "mlocati/ip-lib": "^1.22"
+        "mlocati/ip-lib": "^1.22",
+        "composer/ca-bundle": "^1.5"
     }
 }

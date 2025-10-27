@@ -1,9 +1,0 @@
-name: Update ASN Workflow
-
-on:
-  workflow_dispatch: # Allow manual triggering for testing
-
-jobs:
-  update-asn-data:
-    name: Update ASN Data
-    uses: ./.github/workflows/update-ip2asn-data.yml

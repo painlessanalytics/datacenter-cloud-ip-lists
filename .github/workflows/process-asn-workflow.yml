@@ -1,9 +1,0 @@
-name: Process ASN Workflow
-
-on:
-  workflow_dispatch: # Allow manual triggering for testing
-
-jobs:
-  process-asn-data:
-    name: Process ASN Data
-    uses: ./.github/workflows/process-ip2asn-data.yml

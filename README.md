@@ -1,10 +1,8 @@
-# datacenter-cloud-ip-lists
-Datacenter and Cloud Services Public IP Lists.
+# Datacenter and Cloud Services Public IP Lists
+Datacenter and Cloud Services Public IP Lists, By [Painless Analytics](https://www.painlessanalytics.com) and founder [Angelo Mandato](https://angelo.mandato.com).
 
 ## Introduction
-This repository provides curated lists of IPv4 and IPv6 address ranges associated with major datacenter and cloud service providers. 
-These lists are useful for network administrators, security professionals, and developers who need to identify and manage traffic 
-from these sources. The data is sourced from reputable projects and is updated weekly to ensure accuracy.
+This repository provides curated lists of [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) records of IPv4 and IPv6 address ranges associated with major datacenter and cloud service providers. These lists are useful for network administrators, security professionals, and developers who need to identify and manage traffic from these sources. The data is sourced from reputable projects and is updated weekly to ensure accuracy.
 
 This list was heavily influenced by the excellent work done by [X4BNet/lists_vpn](https://github.com/X4BNet/lists_vpn). Our needs 
 require IPv6 as well as IPv4 addresses with additional lists specifically listing the top cloud service providers utilizing their 
