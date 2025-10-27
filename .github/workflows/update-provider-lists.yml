@@ -1,6 +1,6 @@
-# update-provider-sources.yml
-name: Update Provider Sources
-run-name: Update Sources
+# update-provider-lists.yml
+name: Update Provider Lists
+run-name: Update Lists
 
 on:
   workflow_call:
@@ -29,8 +29,8 @@ jobs:
       - name: Composer Install
         run: composer install --working-dir=bin/
 
-      - name: Update Provider Sources
-        run: php bin/update_provider_sources.php
+      - name: Update Provider Lists
+        run: php bin/update_provider_lists.php
 
       - name: Commit and push changes
         run: |

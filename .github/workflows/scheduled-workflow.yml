@@ -7,6 +7,7 @@ on:
   workflow_dispatch: # Allow manual triggering for testing
 
 jobs:
+  # We want these jobs to run sequentially to ensure data integrity between commits
   update-asn-data:
     name: Update ASN Data
     uses: ./.github/workflows/update-ip2asn-data.yml
@@ -15,3 +16,8 @@ jobs:
     name: Process ASN Data
     needs: update-asn-data
     uses: ./.github/workflows/process-ip2asn-data.yml
+
+  update-provider-lists:
+    name: Update Provider Lists
+    needs: process-asn-data
+    uses: ./.github/workflows/update-provider-lists.yml

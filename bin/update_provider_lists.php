@@ -1,7 +1,7 @@
 <?php
-// update_provider_sources.php
+// update_provider_lists.php
 /**
- * Script to update provider lists from their official source lists.
+ * Script to update provider lists from their officially posted ip ranges lists.
  */
 
 // Composer autoload
