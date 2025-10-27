@@ -128,7 +128,7 @@ foreach( $downloadLists as $providerName => $fileContents ) {
     // Unable to save IPv6 file, skipping.
     echo "\tlists/source/" . basename($filePathIPv6) . " (skipped, no IPv6 data)\n";
   }
-  
+
   // Make versions of the files that are aggregated (simplified)
   $aggregatedFilePath = dirname(dirname(__FILE__)) . '/lists/source/aggregated/' . $providerName . '.txt';
   $aggregatedFilePathIPv4 = dirname(dirname(__FILE__)) . '/lists/source/aggregated/' . $providerName . '-ipv4.txt';
@@ -165,12 +165,14 @@ foreach( $downloadLists as $providerName => $fileContents ) {
   }
 }
 
+echo "Provider source files created in " . round((microtime(true) - $createTime), 2) . " seconds.\n";
 $memoryUsage = memory_get_peak_usage(true);
 echo sprintf("Peak memory usage: %s bytes (%.2f MB)\n", number_format($memoryUsage), $memoryUsage / (1024 * 1024)); 
 
 function parseAWSIPRanges($jsonContents) {
   $dataToSave = [];
   $dataToSave['combined'] = [];
+  // We will use the IP address as a key to avoid duplicates, performs faster than checking the array during iteration
   $dataToSave['ipv4'] = [];
   $dataToSave['ipv6'] = [];
 
@@ -178,24 +180,20 @@ function parseAWSIPRanges($jsonContents) {
   if( isset($jsonData['prefixes']) ) {
     foreach( $jsonData['prefixes'] as $prefixRecord ) {
       if( isset($prefixRecord['ip_prefix']) ) {
-        if( in_array($prefixRecord['ip_prefix'], $dataToSave['ipv4']) ) {
-          continue; // Skip duplicates
-        }
-        $dataToSave['ipv4'][] = $prefixRecord['ip_prefix'];
+        $dataToSave['ipv4'][ $prefixRecord['ip_prefix'] ] = $prefixRecord['ip_prefix'];
       }
     }
   }
   if( isset($jsonData['ipv6_prefixes']) ) {
     foreach( $jsonData['ipv6_prefixes'] as $prefixRecord ) {
       if( isset($prefixRecord['ipv6_prefix']) ) {
-        if( in_array($prefixRecord['ipv6_prefix'], $dataToSave['ipv6']) ) {
-          continue; // Skip duplicates
-        }
-        $dataToSave['ipv6'][] = $prefixRecord['ipv6_prefix'];
+        $dataToSave['ipv6'][ $prefixRecord['ipv6_prefix'] ] = $prefixRecord['ipv6_prefix'];
       }
     }
   }
-
+  // Convert the keys to numeric indexes for efficiency
+  $dataToSave['ipv4'] = array_values($dataToSave['ipv4']);
+  $dataToSave['ipv6'] = array_values($dataToSave['ipv6']);
   return sortAndCombineData($dataToSave);
 }
 
@@ -203,7 +201,8 @@ function parseAWSIPRanges($jsonContents) {
 function parseAzureIPRanges($jsonContents) {
   $dataToSave = [];
   $dataToSave['combined'] = [];
-  $dataToSave['ipv4'] = [];
+  // We will use the IP address as a key to avoid duplicates, performs faster than checking the array during iteration
+  $dataToSave['ipv4'] = []; 
   $dataToSave['ipv6'] = [];
 
   $jsonData = json_decode($jsonContents, true);
@@ -212,16 +211,10 @@ function parseAzureIPRanges($jsonContents) {
       if( isset($valueRecord['properties']['addressPrefixes']) ) {
         foreach( $valueRecord['properties']['addressPrefixes'] as $prefix ) {
 
-          if( filter_var($prefix, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) || strpos($prefix, '/') !== false && filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ) {
-            if( in_array($prefix, $dataToSave['ipv4']) ) {
-              continue; // Skip duplicates
-            }
-            $dataToSave['ipv4'][] = $prefix;
-          } elseif( filter_var($prefix, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) || strpos($prefix, '/') !== false && filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) ) {
-            if( in_array($prefix, $dataToSave['ipv6']) ) {
-              continue; // Skip duplicates
-            }
-            $dataToSave['ipv6'][] = $prefix;
+          if( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ) {
+            $dataToSave['ipv4'][$prefix] = $prefix; // We will invert the array when we are done
+          } elseif( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) ) {
+            $dataToSave['ipv6'][$prefix] = $prefix; // We will invert the array when we are done
           } else {
             echo "Unrecognized prefix format: $prefix\n";
           }
@@ -233,12 +226,17 @@ function parseAzureIPRanges($jsonContents) {
   } else {
     return new Exception("Unexpected Azure IP list format, 'values' key not found.");
   }
+
+  // Convert the keys to numeric indexes for efficiency
+  $dataToSave['ipv4'] = array_values($dataToSave['ipv4']);
+  $dataToSave['ipv6'] = array_values($dataToSave['ipv6']);
   return sortAndCombineData($dataToSave);
 }
 
 function parseGoogleCloudIPRanges($jsonContents) {
   $dataToSave = [];
   $dataToSave['combined'] = [];
+  // We will use the IP address as a key to avoid duplicates, performs faster than checking the array during iteration
   $dataToSave['ipv4'] = [];
   $dataToSave['ipv6'] = [];
 
@@ -246,19 +244,16 @@ function parseGoogleCloudIPRanges($jsonContents) {
   if( isset($jsonData['prefixes']) ) {
     foreach( $jsonData['prefixes'] as $prefixRecord ) {
       if( isset($prefixRecord['ipv4Prefix']) ) {
-        if( in_array($prefixRecord['ipv4Prefix'], $dataToSave['ipv4']) ) {
-          continue; // Skip duplicates
-        }
-        $dataToSave['ipv4'][] = $prefixRecord['ipv4Prefix'];
+        $dataToSave['ipv4'][ $prefixRecord['ipv4Prefix'] ] = $prefixRecord['ipv4Prefix'];
       }
       if( isset($prefixRecord['ipv6Prefix']) ) {
-        if( in_array($prefixRecord['ipv6Prefix'], $dataToSave['ipv6']) ) {
-          continue; // Skip duplicates
-        }
-        $dataToSave['ipv6'][] = $prefixRecord['ipv6Prefix'];
+        $dataToSave['ipv6'][ $prefixRecord['ipv6Prefix'] ] = $prefixRecord['ipv6Prefix'];
       }
     }
   }
+  // Convert the keys to numeric indexes for efficiency
+  $dataToSave['ipv4'] = array_values($dataToSave['ipv4']);
+  $dataToSave['ipv6'] = array_values($dataToSave['ipv6']);
   return sortAndCombineData($dataToSave);
 }
 
@@ -266,6 +261,7 @@ function parseGoogleCloudIPRanges($jsonContents) {
 function parseDigitalOceanIPRanges($csvContents) {
   $dataToSave = [];
   $dataToSave['combined'] = [];
+  // We will use the IP address as a key to avoid duplicates, performs faster than checking the array during iteration
   $dataToSave['ipv4'] = [];
   $dataToSave['ipv6'] = [];
 
@@ -275,18 +271,15 @@ function parseDigitalOceanIPRanges($csvContents) {
     if( !empty($columns[0]) ) {
       $prefix = trim($columns[0]);
       if( filter_var($prefix, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) || strpos($prefix, '/') !== false && filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ) {
-        if( in_array($prefix, $dataToSave['ipv4']) ) {
-          continue; // Skip duplicates
-        }
-        $dataToSave['ipv4'][] = $prefix;
+        $dataToSave['ipv4'][$prefix] = $prefix;
       } elseif( filter_var($prefix, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) || strpos($prefix, '/') !== false && filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) ) {
-        if( in_array($prefix, $dataToSave['ipv6']) ) {
-          continue; // Skip duplicates
-        }
-        $dataToSave['ipv6'][] = $prefix;
+        $dataToSave['ipv6'][$prefix] = $prefix;
       }
     }
   }
+  // Convert the keys to numeric indexes for efficiency
+  $dataToSave['ipv4'] = array_values($dataToSave['ipv4']);
+  $dataToSave['ipv6'] = array_values($dataToSave['ipv6']);
   return sortAndCombineData($dataToSave);
 }
 
@@ -300,6 +293,7 @@ function parseCloudflareIPRanges($ipv4Contents = '', $ipv6Contents = '') {
 function parseOracleCloudIPRanges($jsonContents) {
   $dataToSave = [];
   $dataToSave['combined'] = [];
+  // We will use the IP address as a key to avoid duplicates, performs faster than checking the array during iteration
   $dataToSave['ipv4'] = [];
   $dataToSave['ipv6'] = [];
 
@@ -311,21 +305,18 @@ function parseOracleCloudIPRanges($jsonContents) {
           if( isset($cidrRecord['cidr']) ) {
             $prefix = $cidrRecord['cidr'];
             if( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ) {
-              if( in_array($prefix, $dataToSave['ipv4']) ) {
-                continue; // Skip duplicates
-              }
-              $dataToSave['ipv4'][] = $prefix;
+              $dataToSave['ipv4'][$prefix] = $prefix;
             } elseif( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) ) {
-              if( in_array($prefix, $dataToSave['ipv6']) ) {
-                continue; // Skip duplicates
-              }
-              $dataToSave['ipv6'][] = $prefix;
+              $dataToSave['ipv6'][$prefix] = $prefix;
             }
           }
         }
       }
     }
   }
+  // Convert the keys to numeric indexes for efficiency
+  $dataToSave['ipv4'] = array_values($dataToSave['ipv4']);
+  $dataToSave['ipv6'] = array_values($dataToSave['ipv6']);
   return sortAndCombineData($dataToSave);
 }
 
@@ -333,6 +324,7 @@ function parseOracleCloudIPRanges($jsonContents) {
 function parseLinodeIPRanges($jsonContents) {
   $dataToSave = [];
   $dataToSave['combined'] = [];
+  // We will use the IP address as a key to avoid duplicates, performs faster than checking the array during iteration
   $dataToSave['ipv4'] = [];
   $dataToSave['ipv6'] = [];
   $lines = explode("\n", trim($jsonContents));
@@ -341,25 +333,22 @@ function parseLinodeIPRanges($jsonContents) {
     if( !empty($columns[0]) && substr(trim($columns[0]), 0, 1) !== '#' ) {
       $prefix = trim($columns[0]);
       if( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ) {
-        if( in_array($prefix, $dataToSave['ipv4']) ) {
-          continue; // Skip duplicates
-        }
-        $dataToSave['ipv4'][] = $prefix;
+        $dataToSave['ipv4'][$prefix] = $prefix;
       } elseif( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) ) {
-        if( in_array($prefix, $dataToSave['ipv6']) ) {
-          continue; // Skip duplicates
-        }
-        $dataToSave['ipv6'][] = $prefix;
+        $dataToSave['ipv6'][$prefix] = $prefix;
       }
     }
   }
-
+  // Convert the keys to numeric indexes for efficiency
+  $dataToSave['ipv4'] = array_values($dataToSave['ipv4']);
+  $dataToSave['ipv6'] = array_values($dataToSave['ipv6']);
   return sortAndCombineData($dataToSave);
 }
 
 function parseGithubIPRanges($jsonContents) {
   $dataToSave = [];
   $dataToSave['combined'] = [];
+  // We will use the IP address as a key to avoid duplicates, performs faster than checking the array during iteration
   $dataToSave['ipv4'] = [];
   $dataToSave['ipv6'] = [];
   $sections = ['hooks', 'web', 'git', 'pages', 'actions'];
@@ -369,22 +358,17 @@ function parseGithubIPRanges($jsonContents) {
     if( isset($jsonData[$section]) ) {
       foreach( $jsonData[$section] as $prefix ) {
         if( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ) {
-          if( in_array($prefix, $dataToSave['ipv4']) ) {
-            continue; // Skip duplicates
-          }
-          $dataToSave['ipv4'][] = $prefix;
+          $dataToSave['ipv4'][$prefix] = $prefix;
         } elseif( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) ) {
-          if( in_array($prefix, $dataToSave['ipv6']) ) {
-            continue; // Skip duplicates
-          }
-          $dataToSave['ipv6'][] = $prefix;
+          $dataToSave['ipv6'][$prefix] = $prefix;
         }
       }
     }
   }
-
+  // Convert the keys to numeric indexes for efficiency
+  $dataToSave['ipv4'] = array_values($dataToSave['ipv4']);
+  $dataToSave['ipv6'] = array_values($dataToSave['ipv6']);
   return sortAndCombineData($dataToSave);
 }
-
 
 // eof
