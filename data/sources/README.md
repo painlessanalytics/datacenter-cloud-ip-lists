@@ -1,7 +1,9 @@
 # Data Sources
+
 This directory contains files that list the URLs of various cloud service providers' published IP address ranges. These files are used as sources to generate the IP address range lists found in the `lists/source/` directory.
 
 ## Data Sources List
+
 Source lists include the following providers and their respective public lists:
 
 * Amazon Web Services (AWS): https://ip-ranges.amazonaws.com/ip-ranges.json
@@ -14,6 +16,7 @@ Source lists include the following providers and their respective public lists:
 * GitHub: https://api.github.com/meta
 
 ## Under Consideration for Future Versions
+
 The following providers have publicly available IP range data, but are not currently included in the automated fetching process. These may be considered for inclusion in future versions.
 
 * IBM Cloud: https://cloud.ibm.com/docs/vpc?topic=vpc-public-ip-ranges
@@ -24,6 +27,7 @@ The following providers have publicly available IP range data, but are not curre
 
 
 ## Data Sources not planned for Inclusion
+
 The following providers do not have IP range data available.
 
 * Akamai: NO LIST AVAILABLE (Linode may cover some Akamai ranges))
