@@ -13,9 +13,7 @@ source lists rather than rely on ARN data. Many thanks to X4BNet for their found
 All lists provided in this repository are in the public domain and can be freely used and distributed. See the License section 
 below for more details.
 
-All lists are saved as txt files with records separated by new lines. Each line contains either IPv4, IPv6, or both address ranges 
-in CIDR notation. Each record is in CIDR format which represents a block of IP addresses assigned to a specific datacenter or 
-cloud service provider. All lists are sorted in ascending order, with IPv4 addresses listed before IPv6 addresses when both are present.
+All lists are saved as txt files with records separated by new lines. Each line contains either IPv4 or IPv6 in CIDR notation. Each record is in CIDR format which represents a block of IP addresses assigned to a specific datacenter or cloud service provider. All lists are sorted in ascending order, with IPv4 addresses listed before IPv6 addresses when both are present. Lists that are specifically for IPv4 or IPv6 only will have a `-ipv4` or `-ipv6` suffix in the file name.
 
 ## ASN Lists
 
@@ -24,12 +22,14 @@ The lists are available in folders found in the [lists/asn/](lists/asn/) directo
 Examples of list file names:
 
 - `aws.txt`: Contains both IPv4 and IPv6 address ranges for Amazon Web Services.
-- `googlecloud-ipv4.txt`: Contains only IPv4 address ranges for Google Cloud Platform.
+- `aws-ipv4.txt`: Contains only IPv4 address ranges for Amazon Web Services.
 - `azure-ipv6.txt`: Contains only IPv6 address ranges for Microsoft Azure.
 - `all.txt`: Contains both IPv4 and IPv6 address ranges for all listed providers combined.
 - `other.txt`: Contains both IPv4 and IPv6 address ranges for all other providers except for the ones listed in the provider specific files.
 
-The `all` list can be thought of as an aggregate of the `other` list and individual provider lists.
+The `all` list is an aggregate of the `other` list and individual provider lists.
+
+The exception to the above naming convention the file `last-updated.txt` which contains the date and time when the lists were last updated. See the Last Updated Information section below for more details.
 
 ## Source Provider Lists
 
