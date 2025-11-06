@@ -26,6 +26,10 @@ For example `2.0` will be used rather than `2.0.0`. Otherwise Semantic Versionin
 ## [Unreleased]
 
 TBD
+## [1.1] - 2025-11-06
+Some minor improvements.
+
+- Lists are now updated daily instead of weekly.
 
 ## [1.0] - 2025-10-27
 
