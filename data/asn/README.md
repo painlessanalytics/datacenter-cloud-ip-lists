@@ -50,5 +50,19 @@ WITH (FORMAT csv, HEADER true);
 
 The CSV file can also be imported into other database systems that support CSV import functionality, but the specific commands may vary.
 
+### Querying the database
+
+Search by description:
+
+```sql
+SELECT * FROM `asn` WHERE `as_description` LIKE '%Amazon%';
+```
+
+Organize the result for use in data txt files in this project:
+
+```sql
+SELECT CONCAT(as_number, " # ",as_description, " (", as_handle, ")") as my_label FROM `asn` WHERE `as_description` LIKE '%Dell Inc%';
+```
+
 ## Update Process
 The ASN data files are automatically updated on a weekly basis using a GitHub Actions workflow defined in `.github/workflows/update-ip2asn-data.yml`. This workflow downloads the latest ASN data from the respective sources and commits any changes to the repository.

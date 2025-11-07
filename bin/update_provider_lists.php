@@ -27,24 +27,32 @@ if( $preDownloadLists instanceof Exception ) {
   exit(1);
 }
 
-// Handle special case for Azure to get the date for the ip-list URL
-if( !empty($preDownloadLists['azure']) ) {
-  if( preg_match('/da13a5de5b63\/ServiceTags_Public_(\d{8})\.json/is', $preDownloadLists['azure'], $matches) ) {
-    $sourcesArray['download_list']['azure'] = str_replace('%YYYYMMDD%', $matches[1], $sourcesArray['replace_download_list']['azure']);
-    echo "Added Azure download URL: " . $sourcesArray['download_list']['azure'] . "\n";
-  } else {
-    echo "Azure download URL not added: Date not found in pre-download file.\n";
+// Check each pre downloaded file to see if we need to do any special processing
+foreach( $preDownloadLists as $providerName => $fileContents ) {
+
+  // Handle special case for Azure to get the date for the ip-list URL
+  // If the provider name starts with 'azure, then we need to get the date from the .json file download link
+  if( strpos($providerName, 'azure') === 0 ) {
+    if( preg_match('/\/ServiceTags_(?:[^_]+)_(\d{8})\.json/is', $fileContents, $matches) ) {
+      $sourcesArray['download_list'][$providerName] = str_replace('%YYYYMMDD%', $matches[1], $sourcesArray['replace_download_list'][$providerName]);
+      echo "Added $providerName download URL: " . $sourcesArray['download_list'][$providerName] . "\n";
+    } else {
+      echo "$providerName download URL not added: Date not found in pre-download file.\n";
+    }
   }
-} else {
-  echo "Azure download URL not added: Pre-download file not set.\n";
 }
 
+// Download the actual provider ip-list files
 $downloadLists = cidrDownload($sourcesArray['download_list']);
 if( $downloadLists instanceof Exception ) {
   echo "Error downloading download list files: " . $downloadLists->getMessage() . "\n";
   exit(1);
 }
 echo "Provider source files downloaded in " . round((microtime(true) - $startTime), 2) . " seconds.\n";
+
+// Add the post-download list files to the download lists for processing last
+$downloadLists = array_merge($downloadLists, $sourcesArray['post_download_list']);
+$azureLists = [];
 
 // Set timestamp for creating lists
 $createTime = microtime(true);
@@ -54,20 +62,24 @@ foreach( $downloadLists as $providerName => $fileContents ) {
   // For debugging purposes:
   $filePathOrig = dirname(dirname(__FILE__)) . '/lists/source/' . $providerName . '.orig';
   file_put_contents($filePathOrig, $fileContents);
-
+  
   $dataToSave = [];
   $dataToSave['combined'] = []; // ipv4 + ipv6
   $dataToSave['ipv4'] = [];
   $dataToSave['ipv6'] = [];
 
-  // Handle special case for provider names with underscores, we combine the records into 1 file assuming  they are 2 separate lists
+  // Handle special case for provider names with underscores, we combine the records into 1 file assuming  they are 2 (or more) separate lists
   if( preg_match('/^([^_]*)\_(.*)$/is', $providerName, $matches) ) {
     $ipVersion = $matches[2]; // ipv4 or ipv6
     $providerShorterName = $matches[1];
-    if( $ipVersion === 'ipv4' ) {
-      continue; // Skip saving here, wait for ipv6 part
+
+    // Azure special case
+    if( $providerShorterName === 'azure' ) {
+      // For azure we need to combine the ipv4 and ipv6 lists into 1 file
+      $azureLists[$providerName] = $fileContents;
     }
-    $providerName = $providerShorterName; // Use the shorter name as the provider name
+
+    continue; // Skip saving here, will merge together in post download step
   }
 
   echo "$providerName: \n";
@@ -76,7 +88,7 @@ foreach( $downloadLists as $providerName => $fileContents ) {
       $dataToSave = parseAWSIPRanges($fileContents);
       break;
     case 'azure':
-      $dataToSave = parseAzureIPRanges($fileContents);
+      $dataToSave = parseAzureIPRanges($azureLists);
       break;
     case 'google-cloud':
       $dataToSave = parseGoogleCloudIPRanges($fileContents);
@@ -85,7 +97,7 @@ foreach( $downloadLists as $providerName => $fileContents ) {
       $dataToSave = parseDigitalOceanIPRanges($fileContents);
       break;
     case 'cloudflare':
-      $dataToSave = parseCloudflareIPRanges($downloadLists[$providerShorterName . '_ipv4'] ?? '', $downloadLists[$providerShorterName . '_ipv6'] ?? '');
+      $dataToSave = parseCloudflareIPRanges($downloadLists[$providerName . '_ipv4'] ?? '', $downloadLists[$providerName . '_ipv6'] ?? '');
       break;
     case 'oracle-cloud':
       $dataToSave = parseOracleCloudIPRanges($fileContents);
@@ -198,35 +210,37 @@ function parseAWSIPRanges($jsonContents) {
 }
 
 // This function is not working yet, Azure changed their IP list format recently
-function parseAzureIPRanges($jsonContents) {
+function parseAzureIPRanges($jsonContentsList) {
   $dataToSave = [];
   $dataToSave['combined'] = [];
   // We will use the IP address as a key to avoid duplicates, performs faster than checking the array during iteration
   $dataToSave['ipv4'] = []; 
   $dataToSave['ipv6'] = [];
 
-  $jsonData = json_decode($jsonContents, true);
-  if( isset($jsonData['values']) ) {
-    foreach( $jsonData['values'] as $valueRecord ) {
-      if( isset($valueRecord['properties']['addressPrefixes']) ) {
-        foreach( $valueRecord['properties']['addressPrefixes'] as $prefix ) {
+  foreach( $jsonContentsList as $key => $jsonContents ) {
+    $jsonData = json_decode($jsonContents, true);
+    if( isset($jsonData['values']) ) {
+      foreach( $jsonData['values'] as $valueRecord ) {
+        if( isset($valueRecord['properties']['addressPrefixes']) ) {
+          foreach( $valueRecord['properties']['addressPrefixes'] as $prefix ) {
 
-          if( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ) {
-            $dataToSave['ipv4'][$prefix] = $prefix; // We will invert the array when we are done
-          } elseif( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) ) {
-            $dataToSave['ipv6'][$prefix] = $prefix; // We will invert the array when we are done
-          } else {
-            echo "Unrecognized prefix format: $prefix\n";
+            if( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ) {
+              $dataToSave['ipv4'][$prefix] = $prefix; // We will invert the array when we are done
+            } elseif( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) ) {
+              $dataToSave['ipv6'][$prefix] = $prefix; // We will invert the array when we are done
+            } else {
+              echo "Unrecognized prefix format: $prefix\n";
+            }
           }
+        } else {
+          return new Exception("Unexpected Azure IP list format, 'addressPrefixes' key not found in value record.");
         }
-      } else {
-        return new Exception("Unexpected Azure IP list format, 'addressPrefixes' key not found in value record.");
       }
+    } else {
+      return new Exception("Unexpected Azure IP list format, 'values' key not found.");
     }
-  } else {
-    return new Exception("Unexpected Azure IP list format, 'values' key not found.");
   }
-
+  
   // Convert the keys to numeric indexes for efficiency
   $dataToSave['ipv4'] = array_values($dataToSave['ipv4']);
   $dataToSave['ipv6'] = array_values($dataToSave['ipv6']);

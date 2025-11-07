@@ -2,10 +2,16 @@
   "title": "Cloud Service Provider IP Ranges",
   "description": "This file contains a list of URLs from which to fetch IP ranges for various cloud service providers.",
   "pre_download_list": {
-    "azure": "https://www.microsoft.com/en-us/download/details.aspx?id=56519"
+    "azure_public": "https://www.microsoft.com/en-us/download/details.aspx?id=56519",
+    "azure_gov": "https://www.microsoft.com/en-US/download/details.aspx?id=57063",
+    "azure_china": "https://www.microsoft.com/en-US/download/details.aspx?id=57062",
+    "azure_germany": "https://www.microsoft.com/en-US/download/details.aspx?id=57064"
   },
   "replace_download_list": {
-    "azure": "https://download.microsoft.com/download/7/1/d/71d86715-5596-4529-9b13-da13a5de5b63/ServiceTags_Public_%YYYYMMDD%.json"
+    "azure_public": "https://download.microsoft.com/download/7/1/d/71d86715-5596-4529-9b13-da13a5de5b63/ServiceTags_Public_%YYYYMMDD%.json",
+    "azure_gov": "https://download.microsoft.com/download/6/4/d/64db03bf-895b-4173-a8b1-ba4ad5d4df22/ServiceTags_AzureGovernment_%YYYYMMDD%.json",
+    "azure_china": "https://download.microsoft.com/download/9/d/0/9d03b7e2-4b80-4bf3-9b91-da8c7d3ee9f9/ServiceTags_China_%YYYYMMDD%.json",
+    "azure_germany": "https://download.microsoft.com/download/0/7/6/076274ab-4b0b-4246-a422-4baf1e03f974/ServiceTags_AzureGermany_%YYYYMMDD%.json"
   },
   "download_list": {
     "aws": "https://ip-ranges.amazonaws.com/ip-ranges.json",
@@ -16,5 +22,9 @@
     "oracle-cloud": "https://docs.oracle.com/iaas/tools/public_ip_ranges.json",
     "linode": "https://geoip.linode.com/",
     "github": "https://api.github.com/meta"
+  },
+  "post_download_list": {
+    "azure": "",
+    "cloudflare": ""
   }
 }

@@ -14,9 +14,9 @@ $startTime = microtime(true);
 /*
  * Preload our data variable files
  */
-$allDatacenterASNs = file(dirname(dirname(__FILE__)).'/data/asn/ASN.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-$asnMap = array_flip($allDatacenterASNs);
+$allDatacenterASNs = cleanAsnLines(file(dirname(dirname(__FILE__)).'/data/asn/ASN.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES));
 $asnMap = array_fill_keys($allDatacenterASNs, 'other'); // Initially map them all to the 'other' provider
+$asnMap = addRemoveAsnLines($asnMap);
 
 // Initialize results array with 'other' and 'all' providers for both IPv4 and IPv6
 $results = [];
@@ -30,6 +30,7 @@ $specificProviders = glob(dirname(dirname(__FILE__)).'/data/asn/specific/*.txt')
 foreach ($specificProviders as $providerFile) {
   $providerName = pathinfo($providerFile, PATHINFO_FILENAME);
   $providerASNs = file($providerFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+  $providerASNs = cleanAsnLines($providerASNs);
   foreach ($providerASNs as $asn) {
     $asnMap[$asn] = $providerName;
   }
@@ -193,4 +194,39 @@ $totalDuration = $endTime - $startTime;
 echo sprintf("Processed data in %.4f seconds.\n", $processDuration);
 echo sprintf("Total script duration: %.4f seconds.\n", $totalDuration);
 
+/**
+ * Add and Remove to/from ASN lines
+ */
+function addRemoveAsnLines($asnSet) {
+  $toRemove = cleanAsnLines(file(dirname(dirname(__FILE__)).'/data/asn/ASN-remove.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES));
+  $toAdd = cleanAsnLines(file(dirname(dirname(__FILE__)).'/data/asn/ASN-add.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES));
+  foreach ($toAdd as $asn) {
+    $asnSet[$asn] = 'other';
+  }
+  foreach ($toRemove as $asn) {
+    unset($asnSet[$asn]);
+  }
+  return $asnSet;
+}
+
+/**
+ * Clean ASN lines by removing comments and 'AS' prefix
+ */
+function cleanAsnLines($lines) {
+  $cleanedLines = []; // Will not contain empty lines or comments
+  foreach ($lines as $line) {
+    // Remove comments
+    $line = preg_replace('/\s*#.*$/', '', $line);
+    // Remove first 2 characters if they are 'AS'
+    if (str_starts_with($line, 'AS')) {
+      $line = substr($line, 2);
+    }
+    $line = trim($line);
+    if ($line === '' || str_starts_with($line, '#')) {
+      continue;
+    }
+    $cleanedLines[] = $line;
+  }
+  return $cleanedLines;
+}
 // eof

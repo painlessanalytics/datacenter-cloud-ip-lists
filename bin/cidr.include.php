@@ -20,6 +20,10 @@ function aggregateIPv6Cidrs(array $cidrs): array
 
   // Step 1: Convert each CIDR to start/end GMP numbers
   foreach ($cidrs as $cidr) {
+    if( strpos($cidr, '/') === false ) {
+      // Not a CIDR, skip
+      continue;
+    }
     [$ip, $prefix] = explode('/', $cidr);
     $ipGmp = inet6ToGmp($ip);
 
@@ -199,6 +203,10 @@ function aggregateIPv4Cidrs(array $cidrs): array
 
   // Step 1: Expand all CIDRs into start/end IP ranges
   foreach ($cidrs as $cidr) {
+    if( strpos($cidr, '/') === false ) {
+      // Not a CIDR, skip
+      continue;
+    }
     [$ip, $prefix] = explode('/', $cidr);
     $ipLong = ip2long($ip);
     $mask = 0xFFFFFFFF << (32 - $prefix);
