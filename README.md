@@ -31,6 +31,8 @@ The `all` list is an aggregate of the `other` list and individual provider lists
 
 The exception to the above naming convention the file `last-updated.txt` which contains the date and time when the lists were last updated. See the Last Updated Information section below for more details.
 
+To see a list of all providers and their respective ASNs, refer to the [data/asn/specific/](data/asn/specific/) folder.
+
 ## Source Provider Lists
 
 In addition to the ASN based lists, there are also lists generated from specific cloud service providers' published IP range data. These lists are found in the [lists/source/](lists/source/) directory. Each list is named according to the cloud service provider it represents, following the same naming convention as the ASN lists.

@@ -27,6 +27,17 @@ For example `2.0` will be used rather than `2.0.0`. Otherwise Semantic Versionin
 
 TBD
 
+## [1.1] - 2025-11-07
+
+Some minor improvements.
+
+- Lists are now updated daily instead of weekly
+- Now downloading the ASN.txt from X4BNet/lists_vpn without any modifications
+- Added ASN-add.txt and ASN-remove.txt files to allow adding or removing ASNs from the main ASN list without modifying the original file
+- Added azure and cloudflare to post-download list processing to handle their multiple source files
+- Azure lists now include US Government, China, and Germany IP ranges
+- Added ASN lists for IBM and Scaleway
+
 ## [1.0] - 2025-10-27
 
 Initial release of datacenter and cloud IP lists repository.
