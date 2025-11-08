@@ -27,6 +27,12 @@ For example `2.0` will be used rather than `2.0.0`. Otherwise Semantic Versionin
 
 TBD
 
+## [1.2] - 2025-11-08
+
+Added Apple iCloud Private Relay IP ranges list.
+
+- Added parsing function for Apple iCloud Private Relay IP ranges from their published CSV file.
+
 ## [1.1] - 2025-11-07
 
 Some minor improvements.

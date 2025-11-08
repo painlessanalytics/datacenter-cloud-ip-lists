@@ -109,6 +109,9 @@ foreach( $downloadLists as $providerName => $fileContents ) {
     case 'github':
       $dataToSave = parseGithubIPRanges($fileContents);
       break;
+    case 'icloud':
+      $dataToSave = parseICloudIPRanges($fileContents);
+      break;
     default:
       break;
   }
@@ -301,6 +304,51 @@ function parseCloudflareIPRanges($ipv4Contents = '', $ipv6Contents = '') {
   $dataToSave = [];
   $dataToSave['ipv6'] = explode("\n", trim($ipv6Contents));
   $dataToSave['ipv4'] = explode("\n", trim($ipv4Contents));
+  return sortAndCombineData($dataToSave);
+}
+
+// Parse Apple iCloud Private Relay IP ranges from a csv file, we only need the first column from each row.
+// This function automatically aggregates the IP ranges to reduce the total number of entries to save memory and improve performance.
+function parseICloudIPRanges($fileContents) {
+  
+  $dataToSave = [];
+  $dataToSave['combined'] = [];
+  // We will use the IP address as a key to avoid duplicates, performs faster than checking the array during iteration
+  $dataToSave['ipv4'] = [];
+  $dataToSave['ipv6'] = [];
+
+  $lines = explode("\n", trim($fileContents));
+  foreach( $lines as $line ) {
+    $columns = str_getcsv($line, ',', '"', '\\');
+    if( !empty($columns[0]) ) {
+      $prefix = trim($columns[0]);
+      if( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ) {
+        $dataToSave['ipv4'][$prefix] = $prefix;
+      } elseif( filter_var(explode('/', $prefix)[0], FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) ) {
+        $dataToSave['ipv6'][$prefix] = $prefix;
+      }
+
+      // Auto aggregate iCloud Private Relay IP ranges
+      if( count($dataToSave['ipv4']) > 5000 ) {
+        $dataToSave['ipv4'] = array_values($dataToSave['ipv4']);
+        $dataToSave['ipv4'] = aggregateIPv4Cidrs($dataToSave['ipv4']);
+        // Invert back to associative array for further processing
+        $dataToSave['ipv4'] = array_combine($dataToSave['ipv4'], $dataToSave['ipv4']);
+      }
+      if( count($dataToSave['ipv6']) > 20000 ) {
+        $dataToSave['ipv6'] = array_values($dataToSave['ipv6']);
+        $dataToSave['ipv6'] = aggregateIPv6Cidrs($dataToSave['ipv6']);
+        // Invert back to associative array for further processing
+        $dataToSave['ipv6'] = array_combine($dataToSave['ipv6'], $dataToSave['ipv6']);
+      }
+    }
+  }
+  // Convert the keys to numeric indexes for efficiency
+  $dataToSave['ipv4'] = array_values($dataToSave['ipv4']);
+  $dataToSave['ipv6'] = array_values($dataToSave['ipv6']);
+  // Aggregate one more time
+  $dataToSave['ipv4'] = aggregateIPv4Cidrs($dataToSave['ipv4']);
+  $dataToSave['ipv6'] = aggregateIPv6Cidrs($dataToSave['ipv6']);
   return sortAndCombineData($dataToSave);
 }
 
