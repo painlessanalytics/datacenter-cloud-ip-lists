@@ -21,7 +21,8 @@
     "cloudflare_ipv6": "https://www.cloudflare.com/ips-v6",
     "oracle-cloud": "https://docs.oracle.com/iaas/tools/public_ip_ranges.json",
     "linode": "https://geoip.linode.com/",
-    "github": "https://api.github.com/meta"
+    "github": "https://api.github.com/meta",
+    "icloud": "https://mask-api.icloud.com/egress-ip-ranges.csv"
   },
   "post_download_list": {
     "azure": "",
