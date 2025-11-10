@@ -2,8 +2,8 @@ name: Scheduled Workflow
 
 on:
   schedule:
-    # Run at 4:23 AM UTC every day
-    - cron: '23 4 * * *'
+    # Run at 1:23 AM UTC every day
+    - cron: '23 1 * * *'
   workflow_dispatch: # Allow manual triggering for testing
 
 jobs:

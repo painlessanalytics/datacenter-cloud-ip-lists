@@ -91,7 +91,7 @@ Each of the `data/`, `lists/asn/`, and `lists/source/` directories contain a `la
 
 The data files in this repository are automatically updated on a weekly basis using GitHub Actions workflows defined in the `.github/workflows/` directory. These workflows download the latest data from the respective sources and process.
 
-**Scheduled to run at 4:23 AM UTC every day**
+**Scheduled to run at 1:23 AM UTC every day**
 
 The update process consists of the following steps:
 
@@ -99,7 +99,7 @@ The update process consists of the following steps:
 2. **Process ASN Data**: Processes the downloaded ASN data to generate updated IP address range lists for datacenter and cloud service providers.
 3. **Update Source Data**: Downloads the latest IP range data from specific cloud service providers (coming soon) and saves in the same list format.
 
-The workflow takes about 3 to 4 minutes to complete. It should be safe to assume after 4:30 AM UTC the data in this repository is up to date and ready for use.
+The workflow takes about 3 to 4 minutes to complete. Git hub can take up to 20 minutes to start execution. It should be safe to assume after 2:00 AM UTC the data in this repository is up to date and ready for use.
 
 ## Usage
 
