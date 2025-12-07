@@ -56,14 +56,14 @@ jobs:
             echo git push
           fi
       
-      # - name: Configure AWS credentials
-      #   if: env.SEND_SNS_CLOUDFRONT_ORIGIN_FACING == 'true'
-      #   uses: aws-actions/configure-aws-credentials@v3
-      #   with:
-      #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #     aws-region: us-east-1
-      #     mask-aws-account-id: "no"
+      - name: Configure AWS credentials
+        if: env.SEND_SNS_CLOUDFRONT_ORIGIN_FACING == 'true'
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+          mask-aws-account-id: "no"
 
       - name: "Send SNS Notification"
         if: env.SEND_SNS_CLOUDFRONT_ORIGIN_FACING == 'true'
@@ -74,7 +74,7 @@ jobs:
           MD5_HASH=$(md5sum "lists/source/aws/aggregated/cloudfront_origin_facing.txt" | awk '{print $1}')
           CREATE_TIME=$(cat lists/source/aws/last-updated.txt)
           echo "Sending SNS notification to topic $SNS_TOPIC_ARN in region $AWS_REGION"
-          echo aws sns publish \
+          aws sns publish \
             --region $AWS_REGION \
             --topic-arn $SNS_TOPIC_ARN \
             --subject "AWS CloudFront Origin Facing IP Address Ranges Update" \
