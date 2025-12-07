@@ -27,6 +27,12 @@ For example `2.0` will be used rather than `2.0.0`. Otherwise Semantic Versionin
 
 TBD
 
+## [1.3.1] - 2025-12-07
+Expanded source lists for AWS with SNS notification functionality.
+
+- Tested AWS source list sending SNS notification functionality via GitHub Actions workflow.
+- Fixed bug in update-provider-lists.yaml where last-updated.txt should be added after checking for changes, not before.
+
 ## [1.3] - 2025-12-07
 Expanded source lists for AWS.
 

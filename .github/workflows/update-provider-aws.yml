@@ -52,8 +52,9 @@ jobs:
             echo "No changes to commit"
           else
             date --rfc-3339=seconds > lists/source/aws/last-updated.txt
-            echo git commit -m "Update provider source lists"
-            echo git push
+            git add lists/source/aws/last-updated.txt
+            git commit -m "Update provider source lists"
+            git push
           fi
       
       - name: Configure AWS credentials
