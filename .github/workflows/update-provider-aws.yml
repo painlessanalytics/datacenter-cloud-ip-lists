@@ -1,0 +1,86 @@
+# update-provider-aws.yml
+name: Update Provider AWS
+run-name: Update AWS Lists
+
+on:
+  workflow_call: # Allow calls from other workflows
+
+  workflow_dispatch: # Allow manual triggering for testing and API calls
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, zlib, gmp
+          tools: composer
+      
+      - name: Composer Install
+        run: composer install --working-dir=bin/
+
+      - name: "Update Provider Lists: AWS"
+        run: |
+          php -d memory_limit=512M bin/update_provider_aws.php
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add lists/source/aws/aggregated/cloudfront_origin_facing.txt
+          if git diff --staged --quiet; then
+            echo "No changes to CloudFront list."
+            export SEND_SNS_CLOUDFRONT_ORIGIN_FACING='false'
+          else
+            echo "CloudFront list updated."
+            export SEND_SNS_CLOUDFRONT_ORIGIN_FACING='true'
+          fi
+          echo "SEND_SNS_CLOUDFRONT_ORIGIN_FACING=$SEND_SNS_CLOUDFRONT_ORIGIN_FACING" >> $GITHUB_ENV
+          git add lists/source/aws/*.txt
+          git add lists/source/aws/aggregated/*.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            date --rfc-3339=seconds > lists/source/aws/last-updated.txt
+            echo git commit -m "Update provider source lists"
+            echo git push
+          fi
+      
+      # - name: Configure AWS credentials
+      #   if: env.SEND_SNS_CLOUDFRONT_ORIGIN_FACING == 'true'
+      #   uses: aws-actions/configure-aws-credentials@v3
+      #   with:
+      #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     aws-region: us-east-1
+      #     mask-aws-account-id: "no"
+
+      - name: "Send SNS Notification"
+        if: env.SEND_SNS_CLOUDFRONT_ORIGIN_FACING == 'true'
+        env:
+          AWS_REGION: us-east-1
+          SNS_TOPIC_ARN: ${{ secrets.CLOUDFRONT_ORIGIN_FACING_SNS_TOPIC_ARN }}
+        run: |
+          MD5_HASH=$(md5sum "lists/source/aws/aggregated/cloudfront_origin_facing.txt" | awk '{print $1}')
+          CREATE_TIME=$(cat lists/source/aws/last-updated.txt)
+          echo "Sending SNS notification to topic $SNS_TOPIC_ARN in region $AWS_REGION"
+          echo aws sns publish \
+            --region $AWS_REGION \
+            --topic-arn $SNS_TOPIC_ARN \
+            --subject "AWS CloudFront Origin Facing IP Address Ranges Update" \
+            --message "{\"create-time\": \"$CREATE_TIME\", \"md5\": \"$MD5_HASH\", \"url\": \"https://raw.githubusercontent.com/painlessanalytics/datacenter-cloud-ip-lists/refs/heads/main/lists/source/aws/aggregated/cloudfront_origin_facing.txt\"}"
+      
+      - name: "Done"
+        run: echo "AWS Provider Lists Update Complete"
+
+

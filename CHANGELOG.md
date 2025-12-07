@@ -27,6 +27,14 @@ For example `2.0` will be used rather than `2.0.0`. Otherwise Semantic Versionin
 
 TBD
 
+## [1.3] - 2025-12-07
+Expanded source lists for AWS.
+
+* Added advanced AWS source lists organized by service name and an all.txt file containing all AWS IP ranges.
+* Updated GitHub Actions workflow to generate the new AWS source lists that is executed via an API call from an AWS Lambda function (when the list is updated).
+* Note: Version 1.3 was not released via a Git tag and was released for testing the workflow. The next release will be version 1.3.x once this functionality is tested and verified.
+
+
 ## [1.2] - 2025-11-08
 
 Added Apple iCloud Private Relay IP ranges list.
