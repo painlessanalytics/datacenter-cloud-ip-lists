@@ -4,7 +4,7 @@ run-name: Update AWS Lists
 
 on:
   workflow_call: # Allow calls from other workflows
-  
+
   workflow_dispatch: # Allow manual triggering for testing and API calls
 
 jobs:
@@ -57,6 +57,15 @@ jobs:
             echo git push
           fi
       
+      # - name: Configure AWS credentials
+      #   if: env.SEND_SNS_CLOUDFRONT_ORIGIN_FACING == 'true'
+      #   uses: aws-actions/configure-aws-credentials@v3
+      #   with:
+      #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     aws-region: us-east-1
+      #     mask-aws-account-id: "no"
+
       - name: "Send SNS Notification"
         if: env.SEND_SNS_CLOUDFRONT_ORIGIN_FACING == 'true'
         env:
