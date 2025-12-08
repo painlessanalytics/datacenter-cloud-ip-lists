@@ -60,8 +60,8 @@ $createTime = microtime(true);
 foreach( $downloadLists as $providerName => $fileContents ) {
 
   // For debugging purposes:
-  $filePathOrig = dirname(dirname(__FILE__)) . '/lists/source/' . $providerName . '.orig';
-  file_put_contents($filePathOrig, $fileContents);
+  // $filePathOrig = dirname(dirname(__FILE__)) . '/lists/source/' . $providerName . '.orig';
+  // file_put_contents($filePathOrig, $fileContents);
   
   $dataToSave = [];
   $dataToSave['combined'] = []; // ipv4 + ipv6

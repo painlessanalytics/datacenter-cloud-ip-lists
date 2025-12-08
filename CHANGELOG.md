@@ -26,6 +26,12 @@ For example `2.0` will be used rather than `2.0.0`. Otherwise Semantic Versionin
 ## [Unreleased]
 
 TBD
+## [1.3.2] - 2025-12-07
+Documented the new AWS source lists and SNS notification functionality.
+
+- Added documentation for the new AWS source lists organized by service name and the all.txt file.
+- Added examples in documentation how to use the aws specific lists.
+- Documented the SNS notification functionality for AWS CloudFront Origin Facing list, if others find it useful to contact me to make the SNS topic public.
 
 ## [1.3.1] - 2025-12-07
 Expanded source lists for AWS with SNS notification functionality.

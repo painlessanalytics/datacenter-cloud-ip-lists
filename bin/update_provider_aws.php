@@ -43,11 +43,11 @@ foreach( $dataArray['ipv6_prefixes'] as $prefix ) {
 }
 
 // Write the prefixes to files
-$baseDir = dirname(__FILE__) . '/../lists/source/aws/';
+$baseDir = dirname(dirname(__FILE__)) . '/lists/aws/';
 if( !is_dir($baseDir) ) {
   mkdir($baseDir, 0755, true);
 }
-$baseAggregatedDir = dirname(__FILE__) . '/../lists/source/aws/aggregated/';
+$baseAggregatedDir = dirname(dirname(__FILE__)) . '/lists/aws/aggregated/';
 if( !is_dir($baseAggregatedDir) ) {
   mkdir($baseAggregatedDir, 0755, true);
 }
