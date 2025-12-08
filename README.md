@@ -149,7 +149,7 @@ echo "set_real_ip_from 192.168.0.0/16;" >> realip.conf
 echo "set_real_ip_from 172.16.0.0/12;" >> realip.conf
 echo "set_real_ip_from 10.0.0.0/8;" >> realip.conf
 # Download the latest CloudFront Origin Facing aggregated list
-curl -O /tmp/cloudfront_origin_facing.txt https://raw.githubusercontent.com/painlessanalytics/datacenter-cloud-ip-lists/master/lists/aws/aggregated/cloudfront_origin_facing.txt
+curl -o /tmp/cloudfront_origin_facing.txt https://raw.githubusercontent.com/painlessanalytics/datacenter-cloud-ip-lists/master/lists/aws/aggregated/cloudfront_origin_facing.txt
 cat /tmp/cloudfront_origin_facing.txt | awk '{print "set_real_ip_from " $0 ";"}' >> realip.conf
 echo -e "real_ip_header X-Forwarded-For;\nreal_ip_recursive on;\n" >> realip.conf
 rm /tmp/cloudfront_origin_facing.txt
