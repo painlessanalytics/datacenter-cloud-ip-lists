@@ -180,7 +180,7 @@ grep "\." route53.txt > route53-ipv4.txt
 grep -v "\." route53.txt > route53-ipv6.txt
 ```
 
-Note: The IP addresses in this entire repository are in CIDR notation and should not include a colon (`:`) unless they are IPv6 addresses. The period (`.`) is only found in IPv4 addresses, but is possible for a colon to appear in an IPv6 address to separate the address itself from a port number (e.g., `2001:0db8:85a3:0000:0000:8a2e:0370:7334:80`). Examples above use a period (`.`) to filter IPv4 addresses, and the -v to extract the inverse for IPv6 addresses. There are many other ways to filter the lists using your preferred programming language or command line tools.
+Note: The IP addresses in this entire repository are in CIDR notation and should not include a colon (`:`) unless they are IPv6 addresses. The period (`.`) is only found in IPv4 addresses. Colons are part of the standard IPv6 address notation, so filtering by the presence of a colon is unreliable for distinguishing IPv4 from IPv6. If an IPv6 address is ever specified with a port (not relevant for these lists), it uses bracket notation, e.g., `[2001:db8::1]:80`. The examples above use a period (`.`) to filter IPv4 addresses, and the `-v` option to extract the inverse for IPv6 addresses. There are many other ways to filter the lists using your preferred programming language or command line tools.
 
 ## Aggregated Lists
 
