@@ -175,7 +175,7 @@ grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\/[0-9]+' ec2.txt > ec2-ipv4.txt
 A quick and dirty way split IPv4 and IPv6 is to assume all IPv4 addresses contain a dot (`.`) and IPv6 addresses do not:
 
 ```bash
-curl -O route53.txt https://raw.githubusercontent.com/painlessanalytics/datacenter-cloud-ip-lists/master/lists/aws/aggregated/route53.txt
+curl -o route53.txt https://raw.githubusercontent.com/painlessanalytics/datacenter-cloud-ip-lists/master/lists/aws/aggregated/route53.txt
 grep "\." route53.txt > route53-ipv4.txt
 grep -v "\." route53.txt > route53-ipv6.txt
 ```
