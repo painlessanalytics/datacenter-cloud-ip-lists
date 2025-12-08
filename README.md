@@ -166,7 +166,7 @@ sudo systemctl restart nginx
 If you only need the IPv4 addresses from a specific AWS service list, you can use command line tools like `grep` or `awk` to filter the list. For example, to retrieve only the IPv4 addresses from the `ec2.txt` list, you can use the following command strictly matches IPv4 addresses that match CIDR notation:
 
 ```bash
-curl -O ec2.txt https://raw.githubusercontent.com/painlessanalytics/datacenter-cloud-ip-lists/master/lists/aws/aggregated/ec2.txt
+curl -o ec2.txt https://raw.githubusercontent.com/painlessanalytics/datacenter-cloud-ip-lists/master/lists/aws/aggregated/ec2.txt
 grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\/[0-9]+' ec2.txt > ec2-ipv4.txt
 ```
 
