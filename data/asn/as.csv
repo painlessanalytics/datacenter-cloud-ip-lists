@@ -921,7 +921,7 @@ asn,handle,"description,country-code"
 928,GVVME2,"GVVME,US"
 929,KIRINO,"KIRINO LLC,US"
 930,CITY-OF-CELINA,"CITY OF CELINA,US"
-931,AS-HYONIX-US,"Hyonix,SG"
+931,HYONIX,"Hyonix,SG"
 932,XNNET,"XNNET LLC,US"
 933,AIT-001,"IOResearch Corp,CA"
 934,BSTI,"Big Sky Internet,US"
@@ -10788,7 +10788,7 @@ asn,handle,"description,country-code"
 11633,4LIFE-HOLDINGS-LLC,"4Life Research USA LLC,US"
 11634,HHC-AS,"Hilton Worldwide Holdings Inc,US"
 11635,AS-ENVI-1,"TelMAX Inc.,CA"
-11636,AS11636,"Unknown AS 11636,XX"
+11636,MB-SRVC-LTD,"MB Services LTD.,US"
 11637,METRODATAPATH,"MetroDataPath Inc.,US"
 11638,IQSOL-AS1,"IQ Solutions Inc.,US"
 11639,EQUITY-TRUST-COMPANY,"ETC,US"
@@ -57715,7 +57715,7 @@ asn,handle,"description,country-code"
 131671,FANTASY,"FANTASY TECHNOLOGY CO. LTD.,TW"
 131672,WANTEASY-AS-TW,"WantEasy Info. Co Ltd.,TW"
 131673,UNIONISME-AS-TW,"unionisme tech. co.,TW"
-131674,OPENRICH,"OpenRich Technology Co. Ltd.,TW"
+131674,OPENRICH,"OpenRich Technologies Co. Ltd.,TW"
 131676,GMICLOUD,"GMI Computing International LTD. Taiwan Branch (CAYMAN ISLANDS REPUBLIC),TW"
 131677,OPENFOR,"OpenFor Telecommunications Co. Ltd.,TW"
 131678,DQWL-AS,"DQWLIT,TW"
@@ -67929,6 +67929,7 @@ asn,handle,"description,country-code"
 142171,IDNIC-ASSYIFA-ID,"Yayasan As Syifa Al Khoeriyyah,ID"
 142172,AMNPL-AS-AP,"ARAMBHA MEDIA NETWORK PRIVATE LIMITED,IN"
 142173,IRINN-ATSPL1-AS-IN,"AMMAH TECHSAVVY PRIVATE LIMITED,IN"
+142174,SHYNET-AS-AP,"Shanghai Heng Yi Network Technology Co. Ltd,CN"
 142266,ACMSB-AS-AP,"Agora Communications (M) Sdn. Bhd.,MY"
 142267,HKBEE-AS-AP,"Hong Kong Beecloud System Technology Services Limited,HK"
 142268,PRIZMA-AS-AP,"Prizma Digital Private Limited,PK"
@@ -85898,7 +85899,7 @@ asn,handle,"description,country-code"
 203750,CIT-ASN-RMS,"LLC Information Technology Center,RU"
 203751,WIFIMAX,"GRUPO WIFIMAX S.L.,ES"
 203752,E-CAPS,"E-CAPS D.O.O,RS"
-203753,CLOUDRACK-SMR,"Individual Entrepreneur Mchedlidze Georgiy Vitalievich,RU"
+203753,FIRSTUNIT,"Individual Entrepreneur Mchedlidze Georgiy Vitalievich,RU"
 203754,ASPHONEPULSE,"Phone Pulse Ltd,IE"
 203755,AS-CDNITGLOBALCOM,"ITGLOBAL.COM NL B.V.,NL"
 203756,TECHALND,"Techland Sp. z o.o.,PL"
@@ -95611,7 +95612,7 @@ asn,handle,"description,country-code"
 213784,TNGNET,"TNGNET B.V.,NL"
 213785,BIL-LU,"Banque Internationale a Luxembourg societe anonyme,LU"
 213786,IDASH,"IDASH SOLUTIONS LIMITED,GB"
-213787,CLOUDRACK-MSK,"Individual Entrepreneur Mchedlidze Georgiy Vitalievich,RU"
+213787,CLOUDRACK,"Individual Entrepreneur Mchedlidze Georgiy Vitalievich,RU"
 213788,ROMEO,"ROMEO B.V.,NL"
 213789,WINLINE,"National Horse-breeding Union Management Company ltd,RU"
 213790,LIMITEDNETWORK-AS,"Limited Network LTD,GB"
@@ -115185,7 +115186,7 @@ asn,handle,"description,country-code"
 397365,AS190901,"Blade Broadband,US"
 397366,SCHMC-ASN,"Silver Cross Hospital,US"
 397367,CRANBROOK-01,"Cranbrook Educational Community,US"
-397368,FAST-WIFI-ONLINE,"DCNHOST,US"
+397368,TETAHOST,"DCNHOST,US"
 397369,LVHN-INET-01,"LVHN,US"
 397370,ACADIANA-WIRELESS,"ACADIANA WIRELESS LLC,US"
 397371,HCDE-TEXAS,"Harris County Department of Education Public Facil,US"
@@ -119820,3 +119821,4 @@ asn,handle,"description,country-code"
 402112,TABAR-1,"Tabarruk,US"
 402331,NWT-030,"UNIVERSAL HEALTH SERVICES,US"
 402332,IQVIA-DURHAM,"IQVIA Holdings Inc,US"
+420042,AS420042,"Unknown AS 420042,XX"
