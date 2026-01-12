@@ -2401,7 +2401,7 @@ asn,handle,"description,country-code"
 2502,TRAIN,"The University of Tokyo,JP"
 2504,NCA5,"Kyoto University,JP"
 2505,HEPNET-J,"High Energy Accelerator Research Organization KEK,JP"
-2506,SUPERCSI,"NTT WEST CHUGOKU CORPORATION,JP"
+2506,SUPERCSI,"NTT business Solutions corporation,JP"
 2508,KYUSHU-U,"Kyushu University,JP"
 2509,ICTSC2025,"Home NOC Operators Group,JP"
 2510,INFOWEB,"FUJITSU LIMITED,JP"
@@ -23128,7 +23128,7 @@ asn,handle,"description,country-code"
 25728,LAMBTON-COLLEGE,"Lambton College of Applied Arts and Technology,CA"
 25729,CITY-OF-IRVING,"City of Irving,US"
 25730,LAYERSIX,"Quixly,CA"
-25731,KNOX-BOX-NETWORKS,"Knox Box Networks,US"
+25731,KNOX-BOX-LLC,"Knox Box Networks,US"
 25732,TOTALCARDINC,"Total Card Inc.,US"
 25733,LEAR,"Lear Corporation (LEA),US"
 25735,SLOTH-NET,"Sloth Networks,US"
@@ -96934,7 +96934,7 @@ asn,handle,"description,country-code"
 215090,HEBERGTONSERV,"Keskin Yavuz trading as HebergTonServ,FR"
 215091,NENCINISPORT,"Nencini Sport SPA,IT"
 215092,HINT-AS,"Home Internet Ltd,RU"
-215093,REG-CUST-AS,"Niklas Wecker,DE"
+215093,NIKLAS-WECKER,"Niklas Wecker,DE"
 215094,KASE,"Kazakhstan Stock Exchange JSC,KZ"
 215096,MADHOST-AS,"Ruslan Ulyanov,RU"
 215097,SYSTEMDYNAMICS,"SYSTEM DYNAMICS SARL,FR"
@@ -97836,7 +97836,7 @@ asn,handle,"description,country-code"
 216036,TOTALCOMMS-AS,"Total Communications and Security Ltd,GB"
 216037,FINKZEIT-AS,"Fink Zeitsysteme GmbH,AT"
 216038,SCIENTRESS,"Jenny Danzmayr,AT"
-216039,EDGESEC-AS,"EdgeSec Technologies Limited,GB"
+216039,ANTIDDOS-PW,"EdgeSec Technologies Limited,GB"
 216040,ANYSEC,"AnySec B.V,NL"
 216041,MUELLER-IT,"Niclas Mueller trading as Mueller IT GmbH u. Co. KG,DE"
 216042,JIHYUKLAB,"Jihyuk Lee,KR"
@@ -117412,7 +117412,7 @@ asn,handle,"description,country-code"
 399513,MODA-PARTNERS-INC-01,"Moda Health,US"
 399514,HORIZONBANK,"Horizon Bank,US"
 399515,PEERTAG-INFRA-CORE,"PeerTag LLC,US"
-399516,PEACEWEB-CLOUD,"PeaceWeb,US"
+399516,TRUEREGISTRAR-CLOUD,"PeaceWeb,US"
 399518,HAWAIIPACIFICHEALTH-ASN-01,"Straub Clinic & Hospital,US"
 399519,WILDSTAR-NETWORKS-01,"WildStar Networks,US"
 399520,LINDENWOOD-UNIVERSITY,"Lindenwood University,US"
