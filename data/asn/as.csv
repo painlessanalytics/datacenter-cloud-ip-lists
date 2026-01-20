@@ -5261,7 +5261,7 @@ asn,handle,"description,country-code"
 5610,O2-CZECH-REPUBLIC,"O2 Czech Republic a.s.,CZ"
 5617,TPNET,"Orange Polska Spolka Akcyjna,PL"
 5618,DPI,"DP IRAN PLC,IR"
-5619,NO-TTSN-ASN1,"TIETOEVRY NORWAY AS,NO"
+5619,NO-TTSN-ASN1,"Tietoevry Norway AS,NO"
 5620,ADRIAMEDIA-AS,"Adria Media Zagreb doo,HR"
 5622,THOMSON-REUTERS,"Thomson Reuters (Professional) UK Ltd,GB"
 5623,ATT-CH-0A,"AT&T Global Network Services Nederland B.V.,NL"
@@ -8217,7 +8217,7 @@ asn,handle,"description,country-code"
 8894,NICE-AS,"Nice LTD,IL"
 8895,ISU,"King Abdul Aziz City for Science and Technology,SA"
 8896,XFIBER-AS,"GLOBALCONNECT AS,NO"
-8897,KCOM-SPN,"KCOM GROUP LIMITED,GB"
+8897,KCOM-SPN,"KCOM Group Limited,GB"
 8898,WHAN,"High-Speed Universal Broadband Services C.I.C.,GB"
 8899,DEUTSCHE-GLASFASER,"inexio Informationstechnologie und Telekommunikation Gmbh,DE"
 8901,GKU-MOSGORTELECOM,"GKU Mosgortelecom,RU"
@@ -11501,7 +11501,7 @@ asn,handle,"description,country-code"
 12387,TON,"TON Total optical Networks AG,CH"
 12388,CABLESURF,"Virgin Media Ireland Limited,IE"
 12389,ROSTELECOM-AS,"PJSC Rostelecom,RU"
-12390,KINGSTON-UK-AS,"KCOM GROUP LIMITED,GB"
+12390,KINGSTON-UK-AS,"KCOM Group Limited,GB"
 12392,ASVOO,"VOO S.A.,BE"
 12393,KPN-BV,"KPN B.V.,NL"
 12395,PANDEMONIUM-AS,"ADISTA SAS,FR"
@@ -14154,7 +14154,7 @@ asn,handle,"description,country-code"
 15442,PG-EUROPE,"Procter & Gamble Service GmbH,DE"
 15443,GREMI-MEDIA-SA,"Gremi Media SA,PL"
 15445,ICQ-AS,"Yahoo Inc.,US"
-15446,XCOMAGNET,"flatexDEGIRO AG,DE"
+15446,XCOMAGNET,"flatexDEGIRO SE,DE"
 15447,AS-CM,"CM.com N.V.,NL"
 15449,OHRANATELECOM,"Ohrana Telecom LLC,RU"
 15450,ALHAMBRA,"Alhambra Systems SA,ES"
@@ -14311,7 +14311,7 @@ asn,handle,"description,country-code"
 15684,OPTICOM-SIA,"OPTICOM SIA,LV"
 15685,CASABLANCA-AS,"CASABLANCA INT a.s.,CZ"
 15687,AS15687,"Aeven A/S,DK"
-15688,NO-TTSN-ASN3,"TIETOEVRY NORWAY AS,NO"
+15688,NO-TTSN-ASN3,"Tietoevry Norway AS,NO"
 15689,ASNUM-ORG-AISN1-RIPE,"Advanced IT Services Nottingham Ltd,GB"
 15690,NOANET,"NATIONAL OBSERVATORY OF ATHENS,GR"
 15691,LEONET-AS-IT,"UAN COMPANY S.R.L.,IT"
@@ -18740,6 +18740,7 @@ asn,handle,"description,country-code"
 20529,AS1-ALFA-SAFETY,"Alfa-Safety SARL,FR"
 20530,ANISP-ROMANIA,"Asociatia Nationala a Internet Service Providerilor din Romania ANISP,RO"
 20533,SAKHTEL-AS,"PJSC Vimpelcom,RU"
+20535,YAHOO-INC,"Yahoo Inc.,US"
 20536,DIMINTERNET-AS,"DIMINTERNET Ltd.,UA"
 20537,AMT-DER-NOE-LANDESREGIERUNG,"Amt der NOe Landesregierung,AT"
 20539,TCRS-AS,"Technical Centre Radio Systems Ltd.,UA"
@@ -19262,7 +19263,7 @@ asn,handle,"description,country-code"
 21341,SINET-AS,"Soroush Rasanheh Company Ltd,IR"
 21342,AKAMAI-ASN2,"Akamai International B.V.,NL"
 21343,ALLIED,"Internet Invest Ltd.,US"
-21344,INTELIGO,"Powszechna Kasa Oszczednosci Bank Polski SA,PL"
+21344,PKO-BP,"Powszechna Kasa Oszczednosci Bank Polski SA,PL"
 21345,SYMANTEC-EU,"CA Technology R&D Limited,GB"
 21346,VISTORM-AS,"Enterprise Services Information Security UK Limited,GB"
 21348,KOPTERIFI,"Lounea Palvelut Oy,FI"
@@ -26487,7 +26488,7 @@ asn,handle,"description,country-code"
 29580,A1BG-RSG,"A1 Bulgaria EAD,BG"
 29581,ASU,"State Educational Institution of higher professional Education 'Altay State University' named after Polzunov I.I.,RU"
 29582,SATCOM-AS,"Optisprint OOD,BG"
-29583,UNIENT-AS,"Spinoco Czech Republic a.s.,CZ"
+29583,UNIENT-AS,"Spinoco a.s.,CZ"
 29584,AZEDUNET-AS,"AZEDUNET LLC,AZ"
 29585,MFA,"Ministry of foreign affairs,IL"
 29587,FRI3DCAMPNET-BY-HERMES-TELECOM,"Hermes Telecom BVBA,BE"
@@ -30447,7 +30448,7 @@ asn,handle,"description,country-code"
 34042,MTTELECOM-AS,"MT-Telecom LLC,RU"
 34045,MCXSYSTEMS-AS,"MCX SERWIS Sp. z o.o.,PL"
 34046,SHIELD-AS,"ShieldTelecom Ltd.,SC"
-34047,DGROUP-AS,"Bystrov Dmitriy Sergeevich,RU"
+34047,DGROUP-AS,"LLC Internet-Service,RU"
 34049,WOSACZ-AS,"H-data spol. s r.o.,CZ"
 34051,AMADEUS-TN-AS,"Amadeus GmbH,DE"
 34052,LOGIKA,"OOO NPP Logika,RU"
@@ -36542,7 +36543,7 @@ asn,handle,"description,country-code"
 41283,SIMPLENET-AS,"Private Enterprise Pavlo Volodymirovich Oliynik,UA"
 41284,VOL-AS,"Limited Liability Company Vostok On-Line,KZ"
 41285,MERLINCOMUA,"PP Private Data,UA"
-41287,IPEOPLE,"ADJENET NETWORKS SL,ES"
+41287,IPEOPLE,"Adjenet Networks SL,ES"
 41288,CTISYSTEMS-AS,"LTD CTI Systems,UA"
 41289,DWD-AS,"Deutscher Wetterdienst,DE"
 41290,ALPINEDC2,"AlpineDC SA,CH"
@@ -37865,7 +37866,7 @@ asn,handle,"description,country-code"
 42878,COMPASBG-AS,"General Partnership Compas - Karadjov & Co.,BG"
 42879,HANNOVERRUECK,"Hannover Rueck SE,DE"
 42880,HP-BCRS-UK,"EntServ UK Limited,GB"
-42881,MARKET,"Contrust Solutions S.R.L.,MD"
+42881,IPV4-TRADEHUB-LTD,"Contrust Solutions S.R.L.,MD"
 42882,SYSUP-AT,"SysUP IT GmbH & Co KG,AT"
 42883,STARLINE-AS,"Roman Ohiienko,UA"
 42885,PARTEL,"Paraisten Puhelin Oy,FI"
@@ -42346,7 +42347,7 @@ asn,handle,"description,country-code"
 47950,LNK,"LNK SYSTEMS MUNTENIA SRL,RO"
 47951,ARMEVA,"Armeva Yazilim ve Danismanlik Anonim Sirketi,TR"
 47952,ICTBULUT,"ICT BULUT BILISIM A.S.,TR"
-47953,GNS-SE-AS,"Global Network Solutions GNS Handelsbolag,SE"
+47953,GNS-SE-AS,"GNS Sweden AB,SE"
 47954,ALFANETTELECOM-AS,"Alpha Net Telecom Ltd,RU"
 47955,CITYCOM-AS,"OOO KTS-Telecom,RU"
 47956,XFONE,"XFone 018 Ltd,IL"
@@ -43085,7 +43086,7 @@ asn,handle,"description,country-code"
 48777,AMPR-AS,"DARC e.V.,DE"
 48778,IHK-NET,"IHK Gesellschaft fuer Informationsverarbeitung mbH,DE"
 48779,BIZIMBULUT,"Bizim Bulut Bilgi ve Iletisim Hizmetleri San. ve Tic. A. S.,TR"
-48780,OLTELECOM-AS,"OLTELECOM JSC,RU"
+48780,FIBER48780-AS,"Fiber Ltd,SC"
 48781,AVK-COM-AS,"AVK-computer ltd,RU"
 48782,FRONTEX-AS,"European Border and Coast Guard Agency,PL"
 48783,PORTAONE-CN-AS,"Porta One-Chernihiv Ltd,UA"
@@ -45046,7 +45047,7 @@ asn,handle,"description,country-code"
 50949,AGRONET-RU-AS,"Agronet LLC,RU"
 50950,ITSC-AS,"IM Level 7 SRL,MD"
 50951,ISR-TRANS-AS,"LLC RAILGO,RU"
-50952,DATAIX-AS,"Global Network Management Inc,AG"
+50952,GNMIX-AS,"Global Network Management Inc,AG"
 50953,KONFER,"David Kondicz trading as KONFER networks,SK"
 50954,EYONA,"Eyona SAS,FR"
 50955,AHOST-AS,"Individual Entrepreneur Iugov Denis Sergeevich,RU"
@@ -60822,7 +60823,7 @@ asn,handle,"description,country-code"
 134821,CHINAUNICOMAU-AS-AP,"China Unicom (Australia) Operations Pty Ltd,AU"
 134822,ITTACN2-AS-AP,"ISRO TELEMETRY TRACKING AND COMMAND NETWORK,IN"
 134823,SDCL-AS-AP,"Sky Digital Co. Ltd.,TW"
-134824,HYIPL-AS-AP,"Host Your Infrastructure ( Pvt) Ltd,LK"
+134824,TEKKI-AS-AP,"Tekki Pvt Ltd,LK"
 134825,BDOGHQLD-AS-AP,"BDO Group Holdings (QLD) Pty Ltd,AU"
 134826,SOFTDEBUTCOLTD-AS-AP,"Softde'but Co. LTD.,TH"
 134827,EYJAPAN-AS-AP,"EY Japan Co. Ltd.,JP"
@@ -65632,6 +65633,7 @@ asn,handle,"description,country-code"
 139776,PETRONAS-BHD-AS-AP,"Petroliam Nasional Berhad,MY"
 139777,WATERNSW-AS-AP,"Water NSW,AU"
 139778,CARPENTERS-AS-AP,"DALTRON,PG"
+139779,NHB2-AS-AP,"Net @ Home,BD"
 139780,BIC-AS-AP,"Brother's ICT Connectivity,BD"
 139781,TOUHEDNET-AS-AP,"TOUHED NET,BD"
 139782,IXPMOE-AS-AP,"IXPMOE Internet Exchange,CN"
@@ -68020,6 +68022,11 @@ asn,handle,"description,country-code"
 142211,DCNET-VN,"DCNET Telecommunication joint stock company,VN"
 142212,IDNIC-DISKOMINFOKOBAR-ID,"Dinas Komunikasi Informatika Statistik dan Persandian Kabupaten Kotawaringin Barat,ID"
 142213,IRINN-OMSAIENT-AS-IN,"OM SAI ENTERPRISES,IN"
+142214,IDNIC-FIVESTAR-AS-ID,"PT Fivestar Teknologi Nusantara,ID"
+142215,IDNIC-BANTERPOL-AS-ID,"PT Saga Infrastruktur Mediaselaras,ID"
+142216,IDNIC-TRIDATA-AS-ID,"PT Tridata Network Indonesia,ID"
+142217,KENDROO-AS-AP,"Kendroo Limited,BD"
+142218,SFNL2-AS-AP,"Sixty Four Networks Limited,BD"
 142266,ACMSB-AS-AP,"Agora Communications (M) Sdn. Bhd.,MY"
 142267,HKBEE-AS-AP,"Hong Kong Beecloud System Technology Services Limited,HK"
 142268,PRIZMA-AS-AP,"Prizma Digital Private Limited,PK"
@@ -79990,7 +79997,7 @@ asn,handle,"description,country-code"
 154459,IDNIC-CBT-ID,"PT CAKRA BUANA TEKNOLOGI,ID"
 154460,DHD-VN,"DHD TECHNOLOGY JOINT STOCK COMPANY,VN"
 154461,OSNETWORK-AS-AP,"OS NETWORK,BD"
-154462,YOURNET1-AS-AP,"Yournet Communications,BD"
+154462,YOURNET-AS-AP,"Yournet Communications,BD"
 154463,CYNTERRAPTYLTD-AS-AP,"Cynterra Pty Limited,AU"
 154464,IRINN-OSPOT08-AS-IN,"OSPOT CONSULTING,IN"
 154465,IRINN-OCTOS-AS-IN,"OCTOS INFRAVENTURES LLP,IN"
@@ -81320,7 +81327,7 @@ asn,handle,"description,country-code"
 198300,FES,"FES Ltd,GB"
 198301,WKD-AS,"Workday Limited,IE"
 198302,APHELION-AS,"Aphelion Consulting AB,SE"
-198303,ABSOLYT-AS,"Limited liability company Absolyt,RU"
+198303,ABSOLYT-AS,"Limited liability company Absolut,RU"
 198304,DOVENET,"MoeDove,US"
 198306,AESL1,"AIG Europe (Services) Limited,GB"
 198307,TPV-SI-AS,"TPV AUTOMOTIVE d.o.o.,SI"
@@ -81844,7 +81851,7 @@ asn,handle,"description,country-code"
 198931,KEYSTEP-AS,"ADVANIA NORGE AS,NO"
 198932,CEK-AS,"CEK LLC,RU"
 198933,OOO-SEVERO-ZAPADNYE-TELEKOMMUNIKACII-AS,"OOO Severo-Zapadnye telekommunikacii,RU"
-198934,ADJENET-AS,"ADJENET NETWORKS SL,ES"
+198934,ADJENET-AS,"Adjenet Networks SL,ES"
 198935,CYBERNET-WMW-AS,"CYBERNET WMW Sp. z o.o.,PL"
 198936,TIETOTUNKKI-OY,"Tietotunkki oy,FI"
 198937,STOMILSANOK-AS,"SANOK RUBBER COMPANY SA,PL"
@@ -82691,7 +82698,7 @@ asn,handle,"description,country-code"
 199974,MDTECH-AS,"MD TECHNOLOGY LIMITED,HK"
 199975,TVC-AS,"TV CENTER JSC,RU"
 199976,AS-DUNE,"DUNE TECHNOLOGY SL,ES"
-199977,SE-SIFO-NET,"Kantar Sweden AB,SE"
+199977,SE-SIFO-NET,"Kantar Media Sweden AB,SE"
 199978,NETCOM,"Robert Jerzy Opielinski trading as NETCOM COMPUTERS,PL"
 199979,PIB-AS,"Palestine Islamic Bank Public shareholding company,PS"
 199980,IVENDO-AS,"IVENDO sp. z o.o.,PL"
@@ -83359,7 +83366,7 @@ asn,handle,"description,country-code"
 200787,SOKOL-AS,"Sokol TRK LLC,UA"
 200788,UZ-SALOM,"LLC MAXEMEX,UZ"
 200789,OPTNET,"Wei Teng LIn,CN"
-200791,TENGIG-AS,"serdar selahattin kekik,TR"
+200791,TENGIG-AS,"Serdar Selahattin Kekik,TR"
 200792,TRV,"MasterCard Payment Transaction Services S.A.,PL"
 200793,AORACONECTA,"AORA CONECTA S.L.L.,ES"
 200794,NAVIGO-IT,"NAVIGO srl,IT"
@@ -87374,7 +87381,7 @@ asn,handle,"description,country-code"
 205098,CGUK,"Cloud Gateway Limited,GB"
 205099,DOLOMITESNETWORK-AS,"DOLOMITES NETWORK S.R.L.,IT"
 205100,F3NETZE,"F3 Netze e.V.,DE"
-205101,STAVANGER-KOMMUNE,"STAVANGER KOMMUNE UTADRETTET VIRKSOMHET,NO"
+205101,STAVANGER-KOMMUNE,"STAVANGER KOMMUNE,NO"
 205103,TELEGRAPH-AS,"Telegraph42 Management GmbH,DE"
 205105,INFONET,"Multan Michal trading as INFO-NET,PL"
 205106,PEASOUP,"Pea Soup Hosting Limited,GB"
@@ -88617,7 +88624,7 @@ asn,handle,"description,country-code"
 206376,INTELLECTICAINDIA,"Intellectica Systems India Private Limited,IN"
 206377,ITSAM,"Kommunalforbundet ITSAM,SE"
 206378,STOLITOMSON-AS,"Stolitomson Company DOO,ME"
-206379,ANILIS,"Anil Information Systems SARL,FR"
+206379,ANILIS,"Anil Information Systems SAS,FR"
 206380,SILTELDTS,"SILTEL TELECOMUNICAZIONI SRL,IT"
 206381,PINJA,"Pinja Digital Oy,FI"
 206382,NEXTSTART,"NEXT START SRL,RO"
@@ -88744,7 +88751,7 @@ asn,handle,"description,country-code"
 206506,MARKUS-WITT,"Markus Witt,DE"
 206507,NOAVARAN,"Noavaran System Sarv Co.Ltd,IR"
 206508,TALSION,"TALSION SASU,FR"
-206509,KCOM-UK-AS,"KCOM GROUP LIMITED,GB"
+206509,KCOM-UK-AS,"KCOM Group Limited,GB"
 206510,ROMAV-COMUNICATII,"Romav Comunicatii SRL,RO"
 206511,SCORPION-SHIPPING,"Scorpion Shipping OOD,BG"
 206512,TIGOVA,"TIGOVA NETWORK LIMITED,GB"
@@ -90537,7 +90544,7 @@ asn,handle,"description,country-code"
 208341,AIRBAND-WHOLESALE,"RURAL WIRELESS LIMITED,GB"
 208342,SWS,"Stadtwerke Steinburg GmbH,DE"
 208343,ASIDK2019,"INTERDNESTRKOM Sovmestnoe Zakrytoe Aktsionernoe Obshchestvo,MD"
-208344,LAMAI,"ICT Teamwork Continuity Services B.V.,NL"
+208344,ICT-TEAMWORK-CONTINUITY,"ICT Teamwork Continuity Services B.V.,NL"
 208345,MEBIUS-AS,"Mebius JSC,RU"
 208346,KAIZENGAMING,"KAIZEN GAMING INTERNATIONAL LIMITED,MT"
 208347,VMISTO-AS,"VIRTUALNE MISTO LLC,UA"
@@ -91221,7 +91228,7 @@ asn,handle,"description,country-code"
 209064,MOH,"Ministry of Internally Displaced Persons from the Occupied Territories Labor Health and Social Affairs of Georgia,GE"
 209065,RIZBUKNET,"RIZBUKNET LLC,UA"
 209066,KALASOFT,"Kalasoft Sp. z o.o.,PL"
-209067,AS-AVIVA-TELECOM,"Aviva-Telecom Ltd.,RU"
+209067,DIANET-AS,"Aviva-Telecom Ltd.,RU"
 209068,BKGHC,"Bukhamseen Group Holding Co,KW"
 209069,ASN-WARPOL,"Warpol.Info Sp. z o.o.,PL"
 209070,SECURCOM,"securCom s.r.o.,SK"
@@ -91353,6 +91360,7 @@ asn,handle,"description,country-code"
 209204,EUROCORP-CLOUD-SERVICES,"Eurocorp Technologies S.r.l.,IT"
 209205,NTUP,"PE Pelin Vitalii,UA"
 209206,A3NET-AS,"VORONEZH TELECOM LLC,RU"
+209207,DHOST-AS,"Digital Hosting Provider LLC,RU"
 209208,POBIEDA-AS,"Marcin Pobieda trading as POBIEDA.PL,PL"
 209209,FABNET-AS,"Fabrizio Lanotte,IT"
 209210,SOFTPROG,"Softprog IT Ltd,GB"
@@ -91690,6 +91698,7 @@ asn,handle,"description,country-code"
 209554,ISIF-AS,"ISIF OU,EE"
 209555,PLATFORMSH,"Platform.sh SAS,FR"
 209556,HOSHI-NETWORK,"Benli Zhong,CN"
+209557,GEELINX-AS,"GEELINX LTD,GB"
 209558,PREMIUMKEAGRUP-AS,"PREMIUM KEA GRUP LLC,RU"
 209559,EVANN,"Evann DREUMONT,FR"
 209560,CAPITALBANK,"Capital Bank of Jordan (Limited public shareholding),JO"
@@ -92218,6 +92227,7 @@ asn,handle,"description,country-code"
 210102,ALCORES-AS,"ALCORES TELECOM S.L.,ES"
 210103,DDPO,"Cedric Dasnois,LU"
 210104,WAWTEL-AS,"Timplus sp. z o.o.,PL"
+210105,COMPUTINGSERVICE,"COMPUTING SERVICE S.R.L.,IT"
 210106,ADRIAN-HILLMANN,"Adrian Hillmann,DE"
 210107,PLUSWEB,"Mahsum Celik trading as ServerPlusInternet Sunucu Hizmetleri,TR"
 210108,SZYBSZYNET-AS,"Michal Polaszek trading as FIRMA KOMPUTEROWA 3 D,PL"
@@ -92296,6 +92306,7 @@ asn,handle,"description,country-code"
 210186,ULTRALINK-AS,"Scientific-Production Enterprise Information Technologies Ltd,UA"
 210187,KEVINRICHARDSON-AS,"Kevin Richardson,GB"
 210188,FLORISH,"Florish LLC.,RU"
+210189,AS-IGUALATORIOMEDICOQUIRURGICO,"IGUALATORIO MEDICO QUIRURGICO S.A. DE SEGUROS Y REASEGUROS,ES"
 210190,NETLOGIC,"NetLogic d.o.o.,HR"
 210191,DREWNOMA-AS,"P.W. Drewnoma Jan Zakrzewski,PL"
 210192,TOPLINESYSTEMS,"Topline Systems Ltd,GB"
@@ -92934,6 +92945,7 @@ asn,handle,"description,country-code"
 210849,ITK-RHEINLAND,"ITK Rheinland,DE"
 210850,FASTCLOUD,"SysNet LLC,GE"
 210851,NPATOUILLARD,"Nicolas Patouillard,FR"
+210853,IDEA-AS,"IDEASOFT YAZILIM SANAYI VE TICARET AS.,TR"
 210854,EBEBEK,"EBEBEK MAGAZACILIK ANONIM SIRKETI,TR"
 210855,MEETSCALE,"Meetscale SAS,FR"
 210856,SKYNODE,"Jesse Bakker trading as Skynode,NL"
@@ -95580,7 +95592,7 @@ asn,handle,"description,country-code"
 213555,ITH-AS,"ITH Ltd.,RU"
 213556,LEVANTENET,"Levante Networks Telecom S.L.,ES"
 213557,UNDERSCORE,"Underscore S.r.l.,SM"
-213558,SPINOCO-USHC,"Spinoco Czech Republic a.s.,CZ"
+213558,SPINOCO-USHC,"Spinoco a.s.,CZ"
 213559,ASMYBV1,"MyOffice s.r.o.,CZ"
 213560,FRANCOISDICKEY,"Francois Dickey,CA"
 213562,SETEC,"SETEC All from Tehnika DOO Skopje,MK"
@@ -96398,7 +96410,7 @@ asn,handle,"description,country-code"
 214417,HROSH,"Andrii Hrosh,UA"
 214418,ITECH28,"ITech28 S.a.r.l.,LU"
 214419,DAMASH-AS,"Damash Software Computer Services LTD,IR"
-214420,CL-NEXUS,"Conor Lewis,GB"
+214420,CLNEXUS,"Conor Lewis,GB"
 214421,CLOUDIAX-GER,"Cloudiax AG,DE"
 214422,ITSY-HOST,"Dmytro Nebaba,UA"
 214423,MSI-AS,"Micro-Star Netherlands Holding B.V.,NL"
@@ -96506,6 +96518,7 @@ asn,handle,"description,country-code"
 214533,FIRSTROUTE,"Sebastian Fenske,DE"
 214535,BIOTECH-CAMPUS,"LLC Biotech Campus,RU"
 214536,BACKWAVES,"BACK WAVES LIMITED,HK"
+214537,SYMEXO,"SYMEXO SAS,FR"
 214538,SERVIOHOST,"PureRelay B.V.,NL"
 214539,ISIMAS,"iSIM Platform Teknoloji A.S.,TR"
 214540,LIFEPAY-AS,"LTD Payment service provider,RU"
@@ -96564,6 +96577,7 @@ asn,handle,"description,country-code"
 214595,ORG-PSL49-RIPE,"PixelNet Systems LTD,GB"
 214596,ORG-NTL83-RIPE,"NovaNet Technologies LTD,GB"
 214597,VITABANK,"Joint Stock Company VITABANK,RU"
+214598,ENVARO,"envaro UG,DE"
 214599,ORG-ISL104-RIPE,"INFRANET SOLUTIONS LTD,GB"
 214600,ORG-SSL125-RIPE,"StarLink Solutions LTD,GB"
 214602,FINTX-AS,"FIRST SERVER LIMITED,GB"
