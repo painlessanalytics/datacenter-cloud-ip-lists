@@ -6151,7 +6151,7 @@ asn,handle,"description,country-code"
 6512,GLOBAL2000,"Global 2000 Communications Inc.,US"
 6513,PROXIMUS,"Proximus,US"
 6514,SRMC,"Scientific Research Management Corporation,US"
-6515,DACSIX-EAST,"DACS-IX,US"
+6515,DACSNX-ISP,"DACS-IX,US"
 6516,TRUENET,"TrueNet Corporation,US"
 6517,LAKENETWORKS-AS,"LAKENETWORKS,US"
 6518,CIX-GCCC,"CIX Inc. and Greater Cinti Chamber of Commerce,US"
@@ -6683,7 +6683,7 @@ asn,handle,"description,country-code"
 7121,PALACEGROUP,"The Palace Group Inc.,US"
 7122,MTS-ASN,"Bell Canada,CA"
 7123,NILENET-T1-0,"NileNet Ltd.,US"
-7124,DACSIX-SOUTH,"DACS-IX,US"
+7124,DACSCX-US,"DACS-IX,US"
 7125,UNIVERSIDAD-MONTERREY,"Universidad de Monterrey,MX"
 7126,UNITEDMEDIA,"United Media,US"
 7127,SCE,"Southern California Edison,US"
@@ -12209,7 +12209,7 @@ asn,handle,"description,country-code"
 13427,SOFTCOM,"Softcom Internet Communications Inc.,US"
 13428,SURFAIRWIRELESS-IN-02,"Surf Air Wireless LLC,US"
 13429,MUSC,"Medical University of South Carolina,US"
-13430,THEWISP-NWIL,"THE WISP.NET CORP.,US"
+13430,THEWISP-NWIL,"DC COMPUTERS,US"
 13431,MILLENNIUM-AS,"Millennium Partners L.P.,US"
 13432,ASN-CXA-LV-13432-CBS,"Cox Communications Inc.,US"
 13433,COXNET,"Cox Enterprises Inc,US"
@@ -17139,7 +17139,7 @@ asn,handle,"description,country-code"
 18871,AS18871,"Indiana Printing and Publishing Company Inc.,US"
 18872,VERITAS,"Veritas Technologies LLC,US"
 18873,LACKLANDIT,"NextGen RCM Services LLC,US"
-18874,EWI-ASN-1,"Digitalglobe Inc.,US"
+18874,MAXAR-ASN,"Maxar Technologies Inc.,US"
 18875,QZN-ASN-001,"Questzone.Net Inc.,CA"
 18876,ARRV,"TPx Communications,US"
 18877,SAILTHRU-01,"Sailthru INC,US"
@@ -19738,6 +19738,7 @@ asn,handle,"description,country-code"
 21864,BEND-BROADBAND,"TDS TELECOM,US"
 21865,ARA-AS-1,"Allison Royce & Associates Inc.,US"
 21866,GOTO-OFFICES,"Goto Group Inc.,US"
+21867,LIGHTPATH-COLUMBUS,"Cablevision Lightpath LLC,US"
 21868,A10H,"A10H LLC,US"
 21869,SUN-CHEMICAL,"Sun Chemical Corporation,US"
 21870,JUNIPER-HERNDON,"Juniper Networks Inc.,US"
@@ -20363,6 +20364,7 @@ asn,handle,"description,country-code"
 22500,MAW-INTF-WORLD,"MAW COMMUNICATIONS,US"
 22501,COOPERATIVA-TELEFONICA-CARLOS,"Cooperativa Telefonica Carlos Tejedor Ltda.,AR"
 22502,LABCORP-HOLDINGS,"Laboratory Corporation of America,US"
+22503,METHOD-01,"Method Security Inc,US"
 22504,LORETTOCOMM,"LORETTO COMMUNICATION SERVICES INC.,US"
 22505,IWK-AND-NS-HEALTH-NETWORK,"Izaak Walton Killam Health Centre,CA"
 22506,BLUEOCEAN-PUBLIC,"Blue Ocean Contact Centers Inc.,CA"
@@ -20724,6 +20726,7 @@ asn,handle,"description,country-code"
 22868,BDPINTERNATIONAL,"BDP International,US"
 22869,CABLECOLOR,"CABLECOLOR S.A.,HN"
 22870,AS22870,"Syniverse Technologies LLC,US"
+22871,HHSF-IN,"Heartland Rural Electric Membership Corporation,US"
 22872,HAPPEWARE-AZ-1,"Happ eWare LLC.,US"
 22873,NEIGHBOURHOOD-CONNECT,"Neighbourhood Connect,CA"
 22874,HIGH-DATA-CONNECTION,"HIGH DATA CONNECTION LLC,US"
@@ -23362,7 +23365,7 @@ asn,handle,"description,country-code"
 25956,LOGIXCOMM-AS4,"Logix,US"
 25957,KISARA-NETWORK-01,"Kisara Development LLC,US"
 25958,MC-INT,"Marshfield Clinic Inc.,US"
-25959,TRUIST-ASN-25959,"SunTrust Banks Inc.,US"
+25959,TRUIST-ASN-25959,"Truist Financial Corporation,US"
 25960,PROPEL-CLOUD-01,"PropelCLOUD,US"
 25961,ALYRICA,"Alyrica Networks Inc.,US"
 25962,ALC,"Atlantic Lottery Corporation,CA"
@@ -23764,7 +23767,7 @@ asn,handle,"description,country-code"
 26366,CITY-PG,"City of Prince George,CA"
 26367,BRADLEY-UNIVERSITY,"Bradley University,US"
 26368,CHARTER-26368-NA,"Charter Communications LLC,US"
-26369,BLISTEX-INC-1800SWIFT,"Blistex Inc.,US"
+26369,OTWA-AS,"Otwa Cloud Inc.,US"
 26370,AS-PALCOM,"Pal Communications LLC,US"
 26371,SWMC,"Peace Health,US"
 26372,VERMONTINFORMATION,"Vermont Information Processing,US"
@@ -23807,6 +23810,7 @@ asn,handle,"description,country-code"
 26409,LUCID-ASN,"Lucid USA Inc.,US"
 26410,PTPA,"Point To Point Access.Com,US"
 26411,PRERENDER-NET,"Saas.group LLC,US"
+26412,CHUMASH-TELECOMMUNICATIONS,"Santa Ynez Band of Chumash Indians,US"
 26413,IP4B-TELECOM,"IP4B Inc.,CA"
 26414,AS-DNS4,"Unicycle LLC,US"
 26415,VERISIGN-INC,"VeriSign Global Registry Services,US"
@@ -24043,6 +24047,7 @@ asn,handle,"description,country-code"
 26650,ALPHA-TECHNOLOGIES,"Alpha Technologies Inc,US"
 26651,CAREFUSION-AS,"CareFusion Corporation,US"
 26652,AIRSTREAM-BNC,"Airstream Communications LLC,US"
+26653,AS-LMS,"La Maison Simons,CA"
 26654,RFA-IDC,"Richard Fleischman & Assoc. Inc.,US"
 26655,PSFC,"Pacific Service Federal Credit,US"
 26656,MISYS-AS,"Finastra Technology Inc.,US"
@@ -29395,6 +29400,7 @@ asn,handle,"description,country-code"
 32875,VIRPUS,"Wowrack.com,US"
 32876,LYCOMING-COLLEGE,"Lycoming College,US"
 32877,SKYWAYNETWORKS,"Skyway Networks,US"
+32878,PETRIEDGE,"PetriEdge LLC,US"
 32879,NV-LEG-01,"State of Nevada Legislature,US"
 32880,TELEVOX,"Televox Inc.,US"
 32881,SERVERNORTH,"Server North,CA"
@@ -35700,6 +35706,7 @@ asn,handle,"description,country-code"
 40349,ISAGENIX,"Isagenix International LLC,US"
 40350,KEYCOOP,"Key Cooperative,US"
 40351,AS-PLDPC,"Pennsylvania Legislative Data Processing Center,US"
+40352,RH-UNK,"Rapid Hacks LLC,US"
 40353,LUNEXGROUP,"Lunex Group Inc,US"
 40354,LOCKTONKC-INTERNET,"Lockton Companies,US"
 40355,SUNDANCE-NET,"Sundance International LLC,US"
@@ -55360,7 +55367,7 @@ asn,handle,"description,country-code"
 62478,CRADLEPOINT,"Cradlepoint Inc.,US"
 62479,PANDORA-ASN,"Pandora,US"
 62480,MODSPACE,"Willscot,US"
-62481,TRUIST-ASN-62481,"SunTrust Banks Inc.,US"
+62481,TRUIST-ASN-62481,"Truist Financial Corporation,US"
 62482,AS-LRCOMM,"L.R. Communications Inc.,US"
 62483,TEREX-AWP,"Terex USA LLC,US"
 62484,48IX-PEERING,"48 IX Inc.,US"
@@ -55810,6 +55817,7 @@ asn,handle,"description,country-code"
 62933,SMC-AS,"Statewide Central Station,US"
 62934,FFBF-PROD01,"First Federal Bank of Florida,US"
 62935,DNL-AS-001,"Discovery Networks International LLC,US"
+62936,TDEM-HQ-01,"Texas Division of Emergency Management,US"
 62937,KIXEYE-INC,"KIXEYE INC.,CA"
 62938,SKY-VALLEY-NETWORK-LLC,"Sky Valley Network,US"
 62939,PINKBIKE-US-DC1,"Outside Interactive Canada Inc.,US"
@@ -56062,6 +56070,7 @@ asn,handle,"description,country-code"
 63189,ANDESASERVICESINC,"Andesa Services Inc,US"
 63190,AMP-NET-01,"adMarketplace Inc.,US"
 63191,WEALTHFRONT-1,"Wealthfront Corporation,US"
+63192,ATL-F-TERM-ADMIN,"TBI Airport Management Inc.,US"
 63193,AHS,"Atlanticare Health System Inc.,US"
 63194,CRASH,"Crashlytics Inc,US"
 63195,GUNTHER-ASNUMBER-01,"Mike Gunther Industries Inc,US"
@@ -84198,7 +84207,7 @@ asn,handle,"description,country-code"
 201538,XIWO-BUSINESS-SERVICES,"XIWO BUSINESS SERVICES SASU,FR"
 201539,ENC-AS-ID,"PT EGIDITYA NETWORK CENTER,ID"
 201540,PJCO,"Pishgaman Toseeh Fanavari Etelaat Va Ertebatat Jonoub (Joint Stock Company),IR"
-201541,WHITE-NETWORK-AS,"Nedas Dozorec,LT"
+201541,WHITE-NETWORK,"Nedas Dozorec,LT"
 201542,MICLOUD,"Mitel Networks Limited,GB"
 201543,GEBR-HEINEMANN,"Gebr. Heinemann SE & Co. KG,DE"
 201544,CIMNAT-AS,"Cimenterie Nationale SAL,LB"
@@ -99035,7 +99044,7 @@ asn,handle,"description,country-code"
 262490,AMBIENTE-VIRTUAL-SISTEMAS,"Ambiente Virtual Sistemas e Conectividade Ltda,BR"
 262491,SAULO-J-MOURA-BORBA,"Saulo J. de Moura Borba ME,BR"
 262492,INTERCONECT-TELEINFORMATICA-EIRELI,"INTERCONECT TELEINFORMATICA EIRELI,BR"
-262493,SKY-SERVICOS-DE,"SKY SERVIÇOS DE BANDA LARGA LTDA,BR"
+262493,PLINIO-HONORIO-SARTORI,"Plínio Honório Sartori,BR"
 262494,VIRTEX-TELECOM,"Virtex Telecom,BR"
 262496,CLONIX-TELECOM-EIRELI,"Clonix Telecom Eireli ME,BR"
 262497,JNNET-TELECOMUNICACOES-EIRELI,"JNNET TELECOMUNICACOES EIRELI - EPP,BR"
@@ -99451,7 +99460,7 @@ asn,handle,"description,country-code"
 263043,WIFF-TELECOM-EIRELI,"WIFF Telecom Eireli,BR"
 263044,NUCLEO-INF-COORD,"Núcleo de Inf. e Coord. do Ponto BR - NIC.BR,BR"
 263045,INST-EDUCACIONAL-PIRACICABANO,"Inst. Educacional Piracicabano da Igreja Metodista,BR"
-263047,LINKFULL-MELHOR-FORNECEDOR,"Linkfull melhor fornecedor dos provedores,BR"
+263047,LINKFULL-MELHOR-FORNECEDOR,"SPEEDNET PROVEDOR DE ACESSO A INTERNET LTDA,BR"
 263048,BITCOM-INTERNET-PROVIDER,"Bitcom Internet Provider LTDA,BR"
 263049,NIPPONTEC-TELECOMUNICACOES,"NIPPONTEC TELECOMUNICACOES,BR"
 263050,REDE-NORTERIOGRANDESE-INFORMATICA,"REDE NORTERIOGRANDESE DE INFORMATICA - RNI,BR"
@@ -104212,6 +104221,7 @@ asn,handle,"description,country-code"
 268519,MASTER-NET,"master net ltda-me,BR"
 268521,PONTOCOM-TELECOM,"PONTO.COM TELECOM,BR"
 268522,STASIAK,"STASIAK E CIA LTDA ME,BR"
+268524,SUMMA-SERVICIOS-CORPORATIVOS,"SUMMA - SERVICIOS CORPORATIVOS INTEGRALES S.A.S.,CO"
 268525,MAYARA-MARQUES-FIGUEIREDO,"MAYARA MARQUES FIGUEIREDO MANUTENCAO EIRELI,BR"
 268526,CONECT-VIRTUA-PROVEDOR,"Conect Virtua Provedor de Internet Banda Larga,BR"
 268527,FIBER-FAST-PROVEDOR,"FIBER FAST PROVEDOR DE INTERNET E SERVICOS LTDA,BR"
@@ -109487,6 +109497,7 @@ asn,handle,"description,country-code"
 274319,PLATINIUM-SYSTEM-CABLE-CA,"PLATINIUM SYSTEM CABLE C.A.,VE"
 274320,GARAING,"GARAING S.A.S,CO"
 274321,TV-CABLE-NET-SYSTEMS-CA,"TV CABLE NET SYSTEMS C.A,VE"
+274322,RED-INTERNACIONAL-TELEVISION,"RED INTERNACIONAL DE TELEVISION VIA SATELITAL SOCIEDAD ANONIMA,GT"
 274333,BIRA-NET,"BIRA NET LTDA,BR"
 274334,ONY-FIBRA-TECNOLOGIA,"ONY FIBRA Tecnologia ltda,BR"
 274335,R-JESUS-TELECOMUNICACOES,"R. de Jesus - Telecomunicacoes LTDA,BR"
@@ -109974,6 +109985,8 @@ asn,handle,"description,country-code"
 275649,PRO-MEGGANET-TELECOM,"Pro Megganet Telecom de Cam Alegre de Lurdes LTDA,BR"
 275650,DEDICADA-AM-TELECOMUNICACOES,"DEDICADA AM TELECOMUNICACOES E MULTIMIDIA LTDA,BR"
 275651,A-CASTRO-FERREIRA,"A DE CASTRO FERREIRA LTDA,BR"
+275652,SPIDER-NET-SERVICOS,"SPIDER NET SERVIÇOS DE INFORMATICA EIRELI,BR"
+275653,YOUFIBER-TELECOMUNICACAO,"YOUFIBER TELECOMUNICACAO LTDA,BR"
 288348,NETWORK-INTERNET-SERVICO,"Network Internet Serviço Provedor,BR"
 292905,SIXSIGMA-NETWORKS-MEXICO,"Sixsigma Networks Mexico S.A. de C.V.,MX"
 297889,GONICUS-GMBH,"GONICUS Gmbh,DE"
@@ -113340,6 +113353,7 @@ asn,handle,"description,country-code"
 394800,MIDMARK,"Midmark Corporation,US"
 394802,BRISTOLHOSPITAL,"BRISTOL HOSPITAL INCORPORATED,US"
 394803,ANSI-ASN,"American National Standards Institute,US"
+394804,JOERENDELL,"Joerendell LLC,US"
 394805,RELIAQUEST,"ReliaQuest LLC,US"
 394806,GOVNET-IXP-FARM,"JMF Solutions Inc,US"
 394808,DEMAN-AS,"Salesforce.com Inc.,US"
@@ -120193,7 +120207,7 @@ asn,handle,"description,country-code"
 401787,OMNITEC,"Omnitec Corporation,US"
 401788,ARIN-XYG,"Xinye Grass Technology inc,US"
 401789,DUMPSTER,"Dumpster Fire Systems LLC,US"
-401790,KYHOST,"West Virginia Internet Exchange,US"
+401790,IXWV,"West Virginia Internet Exchange,US"
 401791,FDR-068,"UNIVERSAL HEALTH SERVICES,US"
 401792,PAHO,"Pan American Health Organization,US"
 401793,NMIE-PUB,"NMIX,US"
@@ -120565,7 +120579,7 @@ asn,handle,"description,country-code"
 402161,NYIIX-LA,"TELEHOUSE International Corp. of America,US"
 402162,BENTHOST,"Benthost LLC,US"
 402163,AS-SKYVAULT,"SkyVault AI,US"
-402164,ROFAEL-ASN-01,"Rofael Aleezada Sole Proprietorship,US"
+402164,ROFAEL-01,"Rofael Aleezada Sole Proprietorship,US"
 402165,BROWSERSTACK-INC,"Browserstack Inc.,US"
 402166,MANNHEIM-SD83,"Mannheim School District 83,US"
 402167,AS-NEBIUS-CENTRAL,"Nebius Inc.,US"
