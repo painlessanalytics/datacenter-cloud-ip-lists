@@ -24347,7 +24347,7 @@ asn,handle,"description,country-code"
 26951,CHARTER-26951-NA,"Charter Communications LLC,US"
 26952,CEVA-US-DC,"CEVA LOGISTICS U.S. INC.,US"
 26953,AJGCO-GB,"Gallagher Bassett Services Inc.,US"
-26954,NETZR,"NETZR LLC,US"
+26954,AS26954,"NETZR LLC,US"
 26955,ITAGROUP-AS,"ITA GROUP,US"
 26956,OSG-SHIP-MANAGMENT-INC,"OSG Ship Management Inc,US"
 26957,SSG-OHIO-MDC,"SSG OHIO,US"
@@ -67989,6 +67989,7 @@ asn,handle,"description,country-code"
 142109,CMSB-AS-AP,"Concentric Media Sdn Bhd,MY"
 142110,NPTPL-AS-AP,"Northern Point Technology Private Limited,SG"
 142111,AIYUN-AS-AP,"Zhejiang Aiyun Network Technology Co Ltd,CN"
+142112,IASL-AS-AP,"ISLAND AVIATION SERVICES LTD,MV"
 142113,ESERVER-AS-AP,"eServer,SK"
 142114,ALEXANDRINACOUNCIL-AS-AP,"Alexandrina Council,AU"
 142115,HKCABLE-AS-AP,"Hong Kong Cable Television Limited,HK"
@@ -84153,7 +84154,7 @@ asn,handle,"description,country-code"
 201395,IT-TIM-AS,"IT-TIM d.o.o.,SI"
 201396,ASN-ORNG-NORD,"goetel GmbH,DE"
 201397,XFIBER-IL,"Lanir communication LTD,IL"
-201398,MADEBYKEIRAN,"KEIRAN S CHIPPENDALE,GB"
+201398,AS201398-NETWORK,"KEIRAN S CHIPPENDALE,GB"
 201399,MEVIS,"MeVis Medical Solutions AG,DE"
 201400,MEDIA-SYS-AS,"MEDIA-SYS SP. Z O.O.,PL"
 201401,NEWVM-AS,"NewVM B.V.,NL"
@@ -97778,7 +97779,7 @@ asn,handle,"description,country-code"
 215356,ALWAYS-ONLINE,"Zomro B.V.,NL"
 215357,FIRMA-97-GMBH,"97 GmbH,DE"
 215358,CONSULTING-SERVICE,"Robert Siebielski trading as Consulting Service,PL"
-215359,ROMAIN-NEIL,"Romain Neil,FR"
+215359,NR-CONSULTING,"Romain Neil,FR"
 215360,LIFESTREAM-KZ-AS,"Lifestream Kazakhstan LLP,KZ"
 215361,SOFTGROUP-AD,"SOFTGROUP AD,BG"
 215362,ZEROMS,"Promo Plus SRL,RO"
