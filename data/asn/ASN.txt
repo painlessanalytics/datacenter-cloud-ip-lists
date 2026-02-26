@@ -675,7 +675,6 @@ AS33251 # Windstream Hosted Solutions, LLC
 AS52465 # WNet Internet y Hosting
 AS52270 # X-Host SRL
 AS45152 # Zone Networks Pty Ltd, Managed Hosting Solutions
-AS8477 # ZTS Echostar Studio Poznan Poland
 AS198153 # AS SEIDOR DATACENTER SANTANDER
 AS52925 # Ascenty DataCenters Locacao e Servicos LTDA
 AS61412 # BunkerInfra Datacenters BV
@@ -684,7 +683,6 @@ AS53225 # DATACENTER
 AS41427 # DataCenter d.o.o.
 AS53101 # Datacenter e Provedores Ltda-ME
 AS41369 # DataCenter Finland Oy
-AS35467 # DataCenter Fryslan AS
 AS59554 # Datacenter Groningen B.V.
 AS52674 # DATACENTER LTDA
 AS24611 # Datacenter Luxembourg S.A.
@@ -903,3 +901,4 @@ AS56635 # https://github.com/X4BNet/lists_vpn/issues/235
 AS5435 # https://github.com/X4BNet/lists_vpn/issues/235
 AS135377 # https://github.com/X4BNet/lists_vpn/issues/236
 AS59787 # https://github.com/X4BNet/lists_vpn/issues/238
+AS213887 # https://github.com/X4BNet/lists_vpn/issues/247
