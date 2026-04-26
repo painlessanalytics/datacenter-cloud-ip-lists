@@ -1,0 +1,10 @@
+13335 # The main CLOUDFLARENET network
+132892 # CLOUDFLARE (often used for regional/specific infrastructure, such as in APNIC regions)
+202623 # CLOUDFLARENET-CORE
+395747 # CLOUDFLARENET-SFO05
+14789 # CLOUDFLARENET
+209242 # CLOUDFLARESPECTRUM
+394536 # CLOUDFLARENET-SFO
+139242 # Cloudflare Sydney
+203898 # Cloudflare UK
+400095 # Cloudflare Inc.
