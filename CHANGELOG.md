@@ -26,7 +26,15 @@ For example `2.0` will be used rather than `2.0.0`. Otherwise Semantic Versionin
 ## [Unreleased]
 
 TBD
+
+## [1.3.3] - 2026-04-26
+
+Added CloudFlare ASN's as the CloudFlare public list is not nearly complete.
+
+- Added data/asn/specific/cloudflare.txt
+
 ## [1.3.2] - 2025-12-07
+
 Documented the new AWS source lists and SNS notification functionality.
 
 - Added documentation for the new AWS source lists organized by service name and the all.txt file.
@@ -34,12 +42,14 @@ Documented the new AWS source lists and SNS notification functionality.
 - Documented the SNS notification functionality for AWS CloudFront Origin Facing list, if others find it useful to contact me to make the SNS topic public.
 
 ## [1.3.1] - 2025-12-07
+
 Expanded source lists for AWS with SNS notification functionality.
 
 - Tested AWS source list sending SNS notification functionality via GitHub Actions workflow.
 - Fixed bug in update-provider-lists.yml where last-updated.txt should be added after checking for changes, not before.
 
 ## [1.3] - 2025-12-07
+
 Expanded source lists for AWS.
 
 * Added advanced AWS source lists organized by service name and an all.txt file containing all AWS IP ranges.
