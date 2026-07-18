@@ -125,7 +125,20 @@ foreach( $downloadLists as $providerName => $fileContents ) {
   $filePath = dirname(dirname(__FILE__)) . '/lists/source/' . $providerName . '.txt';
   $filePathIPv4 = dirname(dirname(__FILE__)) . '/lists/source/' . $providerName . '-ipv4.txt';
   $filePathIPv6 = dirname(dirname(__FILE__)) . '/lists/source/' . $providerName . '-ipv6.txt';
-  
+
+  // Safeguard against shrunken data: a source can return a valid-but-partial
+  // response (e.g. a truncated file or a mostly-empty JSON payload) that parses
+  // to only a handful of records. Writing it would clobber a good previous
+  // version. Require at least 5 records in the new list, unless the previous
+  // version had fewer than 10 records (in which case the provider legitimately
+  // publishes only a few ranges, or this is a brand-new list, so we allow it).
+  $newRecordCount = count($dataToSave['combined']);
+  $previousRecordCount = countRecordsInFile($filePath);
+  if( $newRecordCount < 5 && $previousRecordCount >= 10 ) {
+    echo "\tShrunken data detected for $providerName: $newRecordCount new record(s) vs $previousRecordCount previous record(s). Keeping previous version, skipping.\n";
+    continue;
+  }
+
   // Save lists to files
   file_put_contents($filePath, implode("\n", $dataToSave['combined']));
   echo "\tlists/source/" . basename($filePath) . "\n";
@@ -183,6 +196,19 @@ foreach( $downloadLists as $providerName => $fileContents ) {
 echo "Provider source files created in " . round((microtime(true) - $createTime), 2) . " seconds.\n";
 $memoryUsage = memory_get_peak_usage(true);
 echo sprintf("Peak memory usage: %s bytes (%.2f MB)\n", number_format($memoryUsage), $memoryUsage / (1024 * 1024)); 
+
+// Count the number of records (non-empty lines) in an existing list file.
+// Returns 0 if the file does not exist or is empty.
+function countRecordsInFile($filePath) {
+  if( !file_exists($filePath) ) {
+    return 0;
+  }
+  $contents = trim(file_get_contents($filePath));
+  if( $contents === '' ) {
+    return 0;
+  }
+  return count(explode("\n", $contents));
+}
 
 function parseAWSIPRanges($jsonContents) {
   $dataToSave = [];
