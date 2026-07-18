@@ -27,6 +27,12 @@ For example `2.0` will be used rather than `2.0.0`. Otherwise Semantic Versionin
 
 TBD
 
+## [1.3.4] - 2026-07-18
+
+Added a safeguard against shrunken provider source data.
+
+- Provider source lists are no longer overwritten when a source returns a valid-but-partial response that parses to fewer than 5 records, unless the previous version already had fewer than 10 records. This prevents a truncated or mostly-empty source response from silently replacing a good previous list.
+
 ## [1.3.3] - 2026-04-26
 
 Added CloudFlare ASN's as the CloudFlare public list is not nearly complete.
