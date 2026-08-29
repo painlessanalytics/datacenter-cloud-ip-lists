@@ -27,7 +27,7 @@ For example `2.0` will be used rather than `2.0.0`. Otherwise Semantic Versionin
 
 TBD
 
-## [1.3.4] - 2026-07-18
+## [1.3.4] - 2026-08-29
 
 Added a safeguard against shrunken provider source data.
 
