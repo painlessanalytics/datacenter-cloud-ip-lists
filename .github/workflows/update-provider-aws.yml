@@ -22,6 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
       
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -58,6 +59,7 @@ jobs:
             date --rfc-3339=seconds > lists/aws/last-updated.txt
             git add lists/aws/last-updated.txt
             git commit -m "Update provider source lists"
+            git pull --rebase origin main
             git push
           fi
       

@@ -18,6 +18,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
       
       - name: Setup PHP with PECL extension
         uses: shivammathur/setup-php@v2
@@ -43,5 +44,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Update ASN lists from ip2asn data"
+            git pull --rebase origin main
             git push
           fi
