@@ -27,6 +27,15 @@ For example `2.0` will be used rather than `2.0.0`. Otherwise Semantic Versionin
 
 TBD
 
+## [1.3.5] - 2026-08-30
+
+Serialized the workflows that commit to main so concurrent runs no longer collide.
+
+- Added a shared `update-providers` concurrency group (with `cancel-in-progress: false`) to scheduled-workflow.yml and update-provider-aws.yml, the two workflows that can start independently. Queued runs now wait instead of running alongside each other.
+- The commit steps in process-ip2asn-data.yml, update-ip2asn-data.yml, update-provider-lists.yml and update-provider-aws.yml now run `git pull --rebase origin main` before pushing, so a run whose push races another commit rebases instead of failing.
+- Checkout in those four workflows now uses `fetch-depth: 0`; the default shallow clone can leave the rebase without a merge base.
+- Removed `workflow_dispatch` from process-ip2asn-data.yml, update-ip2asn-data.yml and update-provider-lists.yml. They are now `workflow_call` only, so they cannot be run outside scheduled-workflow.yml and bypass the concurrency group.
+
 ## [1.3.4] - 2026-08-29
 
 Added a safeguard against shrunken provider source data.
